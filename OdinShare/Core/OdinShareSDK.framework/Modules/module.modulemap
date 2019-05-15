@@ -1,0 +1,6 @@
+framework module OdinShareSDK {
+  umbrella header "OdinShareSDK.h"
+
+  export *
+  module * { export * }
+}
