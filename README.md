@@ -22,7 +22,9 @@
 	 pod 'OdinShare/Social/SoicalInstagram'
 	
 2. 通过运行“pod Install”安装
+
 3. 把OdinShare放在你需要的地方`#import "OdinShareSDK/OdinShareSDK.h"`.
+
 # 使用
 1. 在didFinishLaunchingWithOptions中设置各平台的key和secret以及回调地址
 ```objective-c
