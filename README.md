@@ -96,7 +96,7 @@
     OdinSocialMessageObject *obj=[[OdinSocialMessageObject alloc]init];
     
     OdinShareMusicObject *musicObj=[[OdinShareMusicObject alloc]init];
-    musicObj.thumbImage=[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"COD13" ofType:@"jpg"]];
+    musicObj.thumbImage=[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"缩略图" ofType:@"jpg"]];
     musicObj.title=title=@"分享标题";
     musicObj.descr=@"分享描述";
     musicObj.musicUrl=@"链接地址";
@@ -112,7 +112,7 @@
     
     OdinSocialMessageObject *obj=[[OdinSocialMessageObject alloc]init];
     OdinShareVideoObject *videoObj=[[OdinShareVideoObject alloc]init];
-    videoObj.thumbImage=[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"COD13" ofType:@"jpg"]];
+    videoObj.thumbImage=[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"缩略图" ofType:@"jpg"]];
 
     videoObj.title=@"分享标题";
     videoObj.descr=@"分享描述";
