@@ -1,0 +1,6 @@
+framework module OdinShareSDKUI {
+  umbrella header "OdinShareSDKUI.h"
+
+  export *
+  module * { export * }
+}
