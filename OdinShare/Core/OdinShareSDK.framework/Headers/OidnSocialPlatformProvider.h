@@ -23,6 +23,9 @@
  */
 @property(nonatomic,assign)OdinSocialPlatformType socialPlatformType;
 
+@property(nonatomic,assign)OdinSocialPlatformType socialLoginPlatformType;
+
+- (BOOL)odin_isInstall:(OdinSocialPlatformType )platformType;
 /**
  *  初始化平台
  *

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface OdinSocialHandler : NSObject<OdinSocialPlatformProvider>
 
 #pragma mark - 子类需要重载的类
-+(void)load;
+//+(void)load;
 +(NSArray*) socialPlatformTypes;
 + (instancetype)defaultManager;
 

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "OdinSocialPlatformConfig.h"
 #import "OdinSocialMessageObject.h"
-
+@class OdinUser;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -98,6 +98,20 @@ NS_ASSUME_NONNULL_BEGIN
 -(BOOL)handleOpenURL:(NSURL *)url options:(NSDictionary*)options;
 
 - (BOOL)isAuth:(OdinSocialPlatformType)type;
+
+
+/**
+ *  平台是否安装
+ *
+ *  @param platformType 平台类型 @see UMSocialPlatformType
+ *
+ *  @return YES 代表安装，NO 代表未安装
+ *  @note 调用前请检查是否配置好平台相关白名单
+ *  在判断QQ空间的App的时候，QQApi判断会出问题
+ */
+-(BOOL) isInstall:(OdinSocialPlatformType )platformType;
+
+- (OdinUser *)getUserInfo:(OdinSocialPlatformType )platformType;
 @end
 
 NS_ASSUME_NONNULL_END

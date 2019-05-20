@@ -23,3 +23,4 @@ FOUNDATION_EXPORT const unsigned char OdinShareSDKVersionString[];
 #import "OdinSocialPlatformConfig.h"
 #import "OdinUser.h"
 #import "OdinDataService.h"
+#import "OdinShareHttp.h"

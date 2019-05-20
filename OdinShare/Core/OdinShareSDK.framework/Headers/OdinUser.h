@@ -11,6 +11,15 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OdinUser : NSObject<NSCoding>
+    
+- (instancetype)initWithDictionary:(NSDictionary *)dict;
+
+
+/**
+ 属于哪个平台的用户
+ */
+@property (nonatomic, copy, nullable) NSString * sharingPlatfrom;
+
 /**
  用户标识
  */
@@ -30,8 +39,34 @@ NS_ASSUME_NONNULL_BEGIN
  用户昵称
  */
 @property (nonatomic, copy, nullable) NSString * nickname;
+    
+/**
+ age
+ */
+@property (nonatomic, assign) NSInteger age;
+    
+/**
+ sex
+ */
+@property (nonatomic, assign) NSInteger sex;
 
 /**
+ 用户昵称
+ */
+@property (nonatomic, copy, nullable) NSString * country;
+
+/**
+ 用户昵称
+ */
+@property (nonatomic, copy, nullable) NSString * province;
+
+/**
+ 用户昵称
+ */
+@property (nonatomic, copy, nullable) NSString * city;
+  
+    
+    /**
  签名信息
  */
 @property (nonatomic, copy, nullable) NSString * sign;

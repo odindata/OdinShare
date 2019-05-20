@@ -49,6 +49,37 @@ typedef void (^OdinSocialGetUserInfoCompletionHandler)(id userInfoResponse,NSErr
 
 
 /////////////////////////////////////////////////////////////////////////////
+//平台的失败错误码--start
+/////////////////////////////////////////////////////////////////////////////
+/**
+ *  U-Share返回错误类型
+ */
+typedef NS_ENUM(NSInteger, OdinSocialPlatformErrorType) {
+    OdinSocialPlatformErrorType_Unknow            = 2000,            // 未知错误
+    OdinSocialPlatformErrorType_NotSupport        = 2001,            // 没有配置-ObjC， 或则SDK版本不支持或则客户端版本不支持
+    OdinSocialPlatformErrorType_AuthorizeFailed   = 2002,            // 授权失败
+    OdinSocialPlatformErrorType_ShareFailed       = 2003,            // 分享失败
+    OdinSocialPlatformErrorType_RequestForUserProfileFailed = 2004,  // 请求用户信息失败
+    OdinSocialPlatformErrorType_ShareDataNil      = 2005,             // 分享内容为空
+    OdinSocialPlatformErrorType_ShareDataTypeIllegal = 2006,          // 分享内容不支持
+    OdinSocialPlatformErrorType_CheckUrlSchemaFail = 2007,            // schemaurl fail
+    OdinSocialPlatformErrorType_NotInstall        = 2008,             // 应用未安装
+    OdinSocialPlatformErrorType_Cancel            = 2009,             // 取消操作
+    OdinSocialPlatformErrorType_NotNetWork        = 2010,             // 网络异常
+    OdinSocialPlatformErrorType_SourceError       = 2011,             // 第三方错误
+    
+    OdinSocialPlatformErrorType_ProtocolNotOverride = 2013,   // 对应的    OdinSocialPlatformProvider的方法没有实现
+    OdinSocialPlatformErrorType_NotUsingHttps      = 2014,   // 没有用https的请求,@see OdinSocialGlobal isUsingHttpsWhenShareContent
+    
+};
+
+/////////////////////////////////////////////////////////////////////////////
+//平台的失败错误码--end
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////////////////////////////
 //平台的类型--start
 /////////////////////////////////////////////////////////////////////////////
 /**
@@ -247,6 +278,10 @@ typedef NS_ENUM(NSUInteger, OdinSocialPlatformType){
      * Facebook账户系统
      */
     OdinSocialPlatformTypeFacebookAccount     = 58,
+    /**
+     *  支付宝
+     */
+    OdinSocialPlatformTypeAliPay           = 993,
     /**
      *  易信
      */
