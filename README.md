@@ -26,7 +26,9 @@
 3. 把OdinShare放在你需要的地方`#import "OdinShareSDK/OdinShareSDK.h"`.
 
 # 使用
-1. 在didFinishLaunchingWithOptions中设置各平台的key和secret以及回调地址
+1.在项目的info.plist中添加OdinKey和OdinSecret,如下图
+![avatar](https://github.com/odindata/OdinShare/blob/master/demo.png)
+2. 在didFinishLaunchingWithOptions中设置各平台的key和secret以及回调地址
 ```objective-c
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -34,7 +36,7 @@
 }
 ```
 
-2. 设置系统回调
+3. 设置系统回调
 ```objective-c
 // 支持所有iOS系统
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
