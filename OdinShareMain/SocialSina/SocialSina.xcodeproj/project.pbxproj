@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8021FAF2251F4C700D7FF8B /* OdinSocialSinaHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D8021FAE2251F4C700D7FF8B /* OdinSocialSinaHandler.m */; };
+		D8021FB02251F4D500D7FF8B /* OdinSocialSinaHandler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8021FAD2251F4C700D7FF8B /* OdinSocialSinaHandler.h */; };
+		E6B7DCBD2DAAE003EE45432C /* libPods-SocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B56B3CD9B1724355AE45BEA8 /* libPods-SocialSina.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8021F9F2251F4AE00D7FF8B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D8021FB02251F4D500D7FF8B /* OdinSocialSinaHandler.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6EEB99D88F495AF5952968B3 /* Pods-SocialSina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialSina.release.xcconfig"; path = "Target Support Files/Pods-SocialSina/Pods-SocialSina.release.xcconfig"; sourceTree = "<group>"; };
+		B56B3CD9B1724355AE45BEA8 /* libPods-SocialSina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialSina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C5E30D017F27D38AFBF039 /* Pods-SocialSina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialSina.debug.xcconfig"; path = "Target Support Files/Pods-SocialSina/Pods-SocialSina.debug.xcconfig"; sourceTree = "<group>"; };
+		D8021FA12251F4AE00D7FF8B /* libSocialSina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocialSina.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8021FAD2251F4C700D7FF8B /* OdinSocialSinaHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinSocialSinaHandler.h; sourceTree = "<group>"; };
+		D8021FAE2251F4C700D7FF8B /* OdinSocialSinaHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinSocialSinaHandler.m; sourceTree = "<group>"; };
+		D8021FB22251F4DA00D7FF8B /* OdinShareSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OdinShareSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8021F9E2251F4AE00D7FF8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B7DCBD2DAAE003EE45432C /* libPods-SocialSina.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8021F982251F4AE00D7FF8B = {
+			isa = PBXGroup;
+			children = (
+				D8021FA32251F4AE00D7FF8B /* SocialSina */,
+				D8021FA22251F4AE00D7FF8B /* Products */,
+				D8021FB12251F4DA00D7FF8B /* Frameworks */,
+				F825EBF9CE104CA0B2160EFA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D8021FA22251F4AE00D7FF8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8021FA12251F4AE00D7FF8B /* libSocialSina.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8021FA32251F4AE00D7FF8B /* SocialSina */ = {
+			isa = PBXGroup;
+			children = (
+				D8021FAD2251F4C700D7FF8B /* OdinSocialSinaHandler.h */,
+				D8021FAE2251F4C700D7FF8B /* OdinSocialSinaHandler.m */,
+			);
+			path = SocialSina;
+			sourceTree = "<group>";
+		};
+		D8021FB12251F4DA00D7FF8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8021FB22251F4DA00D7FF8B /* OdinShareSDK.framework */,
+				B56B3CD9B1724355AE45BEA8 /* libPods-SocialSina.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F825EBF9CE104CA0B2160EFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2C5E30D017F27D38AFBF039 /* Pods-SocialSina.debug.xcconfig */,
+				6EEB99D88F495AF5952968B3 /* Pods-SocialSina.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8021FA02251F4AE00D7FF8B /* SocialSina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8021FAA2251F4AE00D7FF8B /* Build configuration list for PBXNativeTarget "SocialSina" */;
+			buildPhases = (
+				56B54C7F3C86D850C6C5B7EC /* [CP] Check Pods Manifest.lock */,
+				D8021F9D2251F4AE00D7FF8B /* Sources */,
+				D8021F9E2251F4AE00D7FF8B /* Frameworks */,
+				D8021F9F2251F4AE00D7FF8B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialSina;
+			productName = SocialSina;
+			productReference = D8021FA12251F4AE00D7FF8B /* libSocialSina.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8021F992251F4AE00D7FF8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Odin;
+				TargetAttributes = {
+					D8021FA02251F4AE00D7FF8B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D8021F9C2251F4AE00D7FF8B /* Build configuration list for PBXProject "SocialSina" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8021F982251F4AE00D7FF8B;
+			productRefGroup = D8021FA22251F4AE00D7FF8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8021FA02251F4AE00D7FF8B /* SocialSina */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56B54C7F3C86D850C6C5B7EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialSina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8021F9D2251F4AE00D7FF8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8021FAF2251F4C700D7FF8B /* OdinSocialSinaHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D8021FA82251F4AE00D7FF8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8021FA92251F4AE00D7FF8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8021FAB2251F4AE00D7FF8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C5E30D017F27D38AFBF039 /* Pods-SocialSina.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialSina/Weibo_SDK/libWeiboSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8021FAC2251F4AE00D7FF8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EEB99D88F495AF5952968B3 /* Pods-SocialSina.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialSina/Weibo_SDK/libWeiboSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8021F9C2251F4AE00D7FF8B /* Build configuration list for PBXProject "SocialSina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8021FA82251F4AE00D7FF8B /* Debug */,
+				D8021FA92251F4AE00D7FF8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8021FAA2251F4AE00D7FF8B /* Build configuration list for PBXNativeTarget "SocialSina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8021FAB2251F4AE00D7FF8B /* Debug */,
+				D8021FAC2251F4AE00D7FF8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8021F992251F4AE00D7FF8B /* Project object */;
+}

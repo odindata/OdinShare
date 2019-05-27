@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:OdinShareSDKUI/OdinShareSDKUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SocialTwitter/SocialTwitter.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SoicalInstagram/SoicalInstagram.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SocialFacebook/SocialFacebook.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SocialAliPay/SocialAliPay.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SocialWeChat/SocialWeChat.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SocialSina/SocialSina.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SocialQQ/SocialQQ.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OdinShareDemo/OdinShareDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OdinShareSDK/OdinShareSDK.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

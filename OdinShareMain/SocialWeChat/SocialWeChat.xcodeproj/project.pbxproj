@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E42CD82FB1D7BCAEB96232C /* libPods-SocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FC6B1CEA94F676394DCCE0 /* libPods-SocialWeChat.a */; };
+		D81CF2E1225EE5B5004C8B83 /* OdinHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D81CF2DF225EE5B5004C8B83 /* OdinHttpTool.m */; };
+		D894C37C22534DBB004D9C42 /* OdinSocialWeChatHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D894C37B22534DBB004D9C42 /* OdinSocialWeChatHandler.m */; };
+		D894C37D22534DF3004D9C42 /* OdinSocialWeChatHandler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D894C37A22534DBB004D9C42 /* OdinSocialWeChatHandler.h */; };
+		D8C97187225C389F00EF3269 /* SendMessageToWXReq+odinRequestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C97186225C389F00EF3269 /* SendMessageToWXReq+odinRequestWithTextOrMediaMessage.m */; };
+		D8C9718A225C38F000EF3269 /* WXMediaMessage+odinMessageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C97189225C38F000EF3269 /* WXMediaMessage+odinMessageConstruct.m */; };
+		D8C9718D225C392700EF3269 /* OdinWXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C9718C225C392700EF3269 /* OdinWXApiManager.m */; };
+		D8C97190225C39AD00EF3269 /* OdinWXApiRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C9718F225C39AD00EF3269 /* OdinWXApiRequestHandler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D894C36C22534D73004D9C42 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D894C37D22534DF3004D9C42 /* OdinSocialWeChatHandler.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		17FC6B1CEA94F676394DCCE0 /* libPods-SocialWeChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialWeChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D1966226E1608F6D80D118 /* Pods-SocialWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialWeChat.release.xcconfig"; path = "Target Support Files/Pods-SocialWeChat/Pods-SocialWeChat.release.xcconfig"; sourceTree = "<group>"; };
+		9061C7266EB0AA86B6E72A7E /* Pods-SocialWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialWeChat.debug.xcconfig"; path = "Target Support Files/Pods-SocialWeChat/Pods-SocialWeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		D81CF2DF225EE5B5004C8B83 /* OdinHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinHttpTool.m; sourceTree = "<group>"; };
+		D81CF2E0225EE5B5004C8B83 /* OdinHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinHttpTool.h; sourceTree = "<group>"; };
+		D894C36E22534D73004D9C42 /* libSocialWeChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocialWeChat.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D894C37A22534DBB004D9C42 /* OdinSocialWeChatHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinSocialWeChatHandler.h; sourceTree = "<group>"; };
+		D894C37B22534DBB004D9C42 /* OdinSocialWeChatHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinSocialWeChatHandler.m; sourceTree = "<group>"; };
+		D894C37F22534EB9004D9C42 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		D894C38022534EB9004D9C42 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		D894C38122534EB9004D9C42 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D894C38222534EB9004D9C42 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		D894C38322534EB9004D9C42 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		D8C97185225C389F00EF3269 /* SendMessageToWXReq+odinRequestWithTextOrMediaMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SendMessageToWXReq+odinRequestWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		D8C97186225C389F00EF3269 /* SendMessageToWXReq+odinRequestWithTextOrMediaMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SendMessageToWXReq+odinRequestWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		D8C97188225C38F000EF3269 /* WXMediaMessage+odinMessageConstruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXMediaMessage+odinMessageConstruct.h"; sourceTree = "<group>"; };
+		D8C97189225C38F000EF3269 /* WXMediaMessage+odinMessageConstruct.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXMediaMessage+odinMessageConstruct.m"; sourceTree = "<group>"; };
+		D8C9718B225C392700EF3269 /* OdinWXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinWXApiManager.h; sourceTree = "<group>"; };
+		D8C9718C225C392700EF3269 /* OdinWXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinWXApiManager.m; sourceTree = "<group>"; };
+		D8C9718E225C39AD00EF3269 /* OdinWXApiRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinWXApiRequestHandler.h; sourceTree = "<group>"; };
+		D8C9718F225C39AD00EF3269 /* OdinWXApiRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinWXApiRequestHandler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D894C36B22534D73004D9C42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E42CD82FB1D7BCAEB96232C /* libPods-SocialWeChat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		193E0E7921279DD5B8084DC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9061C7266EB0AA86B6E72A7E /* Pods-SocialWeChat.debug.xcconfig */,
+				59D1966226E1608F6D80D118 /* Pods-SocialWeChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		1A83AF55EE694A204211B26E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17FC6B1CEA94F676394DCCE0 /* libPods-SocialWeChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D894C36522534D73004D9C42 = {
+			isa = PBXGroup;
+			children = (
+				D894C37022534D73004D9C42 /* SocialWeChat */,
+				D894C36F22534D73004D9C42 /* Products */,
+				193E0E7921279DD5B8084DC0 /* Pods */,
+				1A83AF55EE694A204211B26E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D894C36F22534D73004D9C42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D894C36E22534D73004D9C42 /* libSocialWeChat.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D894C37022534D73004D9C42 /* SocialWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				D894C37E22534EB9004D9C42 /* WeChatSDK1.8.4 */,
+				D894C37A22534DBB004D9C42 /* OdinSocialWeChatHandler.h */,
+				D894C37B22534DBB004D9C42 /* OdinSocialWeChatHandler.m */,
+				D8C97181225C359300EF3269 /* Control */,
+				D8C97180225C359200EF3269 /* Helper */,
+			);
+			path = SocialWeChat;
+			sourceTree = "<group>";
+		};
+		D894C37E22534EB9004D9C42 /* WeChatSDK1.8.4 */ = {
+			isa = PBXGroup;
+			children = (
+				D894C37F22534EB9004D9C42 /* WXApi.h */,
+				D894C38022534EB9004D9C42 /* WXApiObject.h */,
+				D894C38122534EB9004D9C42 /* README.txt */,
+				D894C38222534EB9004D9C42 /* WechatAuthSDK.h */,
+				D894C38322534EB9004D9C42 /* libWeChatSDK.a */,
+			);
+			path = WeChatSDK1.8.4;
+			sourceTree = "<group>";
+		};
+		D8C97180225C359200EF3269 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D81CF2E0225EE5B5004C8B83 /* OdinHttpTool.h */,
+				D81CF2DF225EE5B5004C8B83 /* OdinHttpTool.m */,
+				D8C97185225C389F00EF3269 /* SendMessageToWXReq+odinRequestWithTextOrMediaMessage.h */,
+				D8C97186225C389F00EF3269 /* SendMessageToWXReq+odinRequestWithTextOrMediaMessage.m */,
+				D8C97188225C38F000EF3269 /* WXMediaMessage+odinMessageConstruct.h */,
+				D8C97189225C38F000EF3269 /* WXMediaMessage+odinMessageConstruct.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D8C97181225C359300EF3269 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9718B225C392700EF3269 /* OdinWXApiManager.h */,
+				D8C9718C225C392700EF3269 /* OdinWXApiManager.m */,
+				D8C9718E225C39AD00EF3269 /* OdinWXApiRequestHandler.h */,
+				D8C9718F225C39AD00EF3269 /* OdinWXApiRequestHandler.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D894C36D22534D73004D9C42 /* SocialWeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D894C37722534D73004D9C42 /* Build configuration list for PBXNativeTarget "SocialWeChat" */;
+			buildPhases = (
+				1120343F0CB2C68CD7399083 /* [CP] Check Pods Manifest.lock */,
+				D894C36A22534D73004D9C42 /* Sources */,
+				D894C36B22534D73004D9C42 /* Frameworks */,
+				D894C36C22534D73004D9C42 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialWeChat;
+			productName = SocialWeChat;
+			productReference = D894C36E22534D73004D9C42 /* libSocialWeChat.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D894C36622534D73004D9C42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Odin;
+				TargetAttributes = {
+					D894C36D22534D73004D9C42 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D894C36922534D73004D9C42 /* Build configuration list for PBXProject "SocialWeChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D894C36522534D73004D9C42;
+			productRefGroup = D894C36F22534D73004D9C42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D894C36D22534D73004D9C42 /* SocialWeChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1120343F0CB2C68CD7399083 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialWeChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D894C36A22534D73004D9C42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C97187225C389F00EF3269 /* SendMessageToWXReq+odinRequestWithTextOrMediaMessage.m in Sources */,
+				D894C37C22534DBB004D9C42 /* OdinSocialWeChatHandler.m in Sources */,
+				D8C9718A225C38F000EF3269 /* WXMediaMessage+odinMessageConstruct.m in Sources */,
+				D8C97190225C39AD00EF3269 /* OdinWXApiRequestHandler.m in Sources */,
+				D8C9718D225C392700EF3269 /* OdinWXApiManager.m in Sources */,
+				D81CF2E1225EE5B5004C8B83 /* OdinHttpTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D894C37522534D73004D9C42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D894C37622534D73004D9C42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D894C37822534D73004D9C42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9061C7266EB0AA86B6E72A7E /* Pods-SocialWeChat.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialWeChat/WeChatSDK1.8.4",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D894C37922534D73004D9C42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D1966226E1608F6D80D118 /* Pods-SocialWeChat.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialWeChat/WeChatSDK1.8.4",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D894C36922534D73004D9C42 /* Build configuration list for PBXProject "SocialWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D894C37522534D73004D9C42 /* Debug */,
+				D894C37622534D73004D9C42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D894C37722534D73004D9C42 /* Build configuration list for PBXNativeTarget "SocialWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D894C37822534D73004D9C42 /* Debug */,
+				D894C37922534D73004D9C42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D894C36622534D73004D9C42 /* Project object */;
+}

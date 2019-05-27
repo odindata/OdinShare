@@ -1,0 +1,25 @@
+{
+  "name": "OdinShare",
+  "version": "0.0.1",
+  "summary": "分享主SDk",
+  "description": "分享SDK",
+  "homepage": "https://github.com/syyjay/OdinShare",
+  "license": {
+    "type": "MIT",
+    "file": "FILE_LICENSE"
+  },
+  "authors": {
+    "syyjay": "syyjay@sina.cn"
+  },
+  "source": {
+    "git": "https://github.com/syyjay/OdinShare.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "OdinShare/**/**",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

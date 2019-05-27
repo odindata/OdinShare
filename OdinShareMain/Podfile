@@ -1,0 +1,43 @@
+##设置workspace文件
+workspace 'OdinShareMain.xcworkspace'
+
+#微信
+target 'SocialWeChat' do
+  # 辨识是哪个项目
+  project 'SocialWeChat/SocialWeChat.xcodeproj'
+  pod 'WechatOpenSDK'
+end
+
+#新浪
+target 'SocialSina' do
+  # 辨识是哪个项目
+  project 'SocialSina/SocialSina.xcodeproj'
+  
+  pod "Weibo_SDK"
+end
+
+
+#SDK
+target 'OdinShareSDK' do
+  # 辨识是哪个项目
+  project 'OdinShareSDK/OdinShareSDK.xcodeproj'
+end
+
+#Demo
+target 'OdinShareDemo' do
+  # 辨识是哪个项目
+  project 'OdinShareDemo/OdinShareDemo.xcodeproj'
+  
+  pod 'WechatOpenSDK'
+  pod "Weibo_SDK"
+  pod 'MJExtension'
+  pod 'IQKeyboardManager'
+  pod 'MBProgressHUD', '~> 1.1.0'
+
+end
+
+
+
+
+
+

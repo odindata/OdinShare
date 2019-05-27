@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D880D644226DA1C0000C0780 /* OdinShareSDKUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D642226DA1C0000C0780 /* OdinShareSDKUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D880D664226DA374000C0780 /* OdinUICollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D880D651226DA373000C0780 /* OdinUICollectionViewCell.m */; };
+		D880D665226DA374000C0780 /* OdinUIPlatformItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D652226DA373000C0780 /* OdinUIPlatformItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D880D666226DA374000C0780 /* OdinUIShareSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D880D653226DA373000C0780 /* OdinUIShareSheetViewController.m */; };
+		D880D667226DA374000C0780 /* OdinUICollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D880D654226DA373000C0780 /* OdinUICollectionViewLayout.m */; };
+		D880D668226DA374000C0780 /* OdinUIShareSheetConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D655226DA373000C0780 /* OdinUIShareSheetConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D880D669226DA374000C0780 /* OdinUIShareSheetViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D656226DA373000C0780 /* OdinUIShareSheetViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D880D66A226DA374000C0780 /* OdinUIPlatformItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D880D657226DA373000C0780 /* OdinUIPlatformItem.m */; };
+		D880D66B226DA374000C0780 /* OdinUICollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D658226DA373000C0780 /* OdinUICollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D880D66C226DA374000C0780 /* OdinUICollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D659226DA373000C0780 /* OdinUICollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D880D66D226DA374000C0780 /* OdinUIShareSheetConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D880D65A226DA373000C0780 /* OdinUIShareSheetConfiguration.m */; };
+		D880D66E226DA374000C0780 /* OdinUIConst.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D65B226DA373000C0780 /* OdinUIConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D880D66F226DA374000C0780 /* OdinColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D880D65D226DA374000C0780 /* OdinColor.m */; };
+		D880D670226DA374000C0780 /* OdinImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D65E226DA374000C0780 /* OdinImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D880D671226DA374000C0780 /* OdinDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = D880D65F226DA374000C0780 /* OdinDevice.m */; };
+		D880D672226DA374000C0780 /* OdinImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D880D660226DA374000C0780 /* OdinImage.m */; };
+		D880D673226DA374000C0780 /* OdinColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D661226DA374000C0780 /* OdinColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D880D674226DA374000C0780 /* OdinDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D662226DA374000C0780 /* OdinDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D880D675226DA374000C0780 /* OdinUIConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D880D663226DA374000C0780 /* OdinUIConst.m */; };
+		D880D678226DA84B000C0780 /* OdinSocialUIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D676226DA84B000C0780 /* OdinSocialUIManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D880D679226DA84B000C0780 /* OdinSocialUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D880D677226DA84B000C0780 /* OdinSocialUIManager.m */; };
+		D891A8942284219300C4BA34 /* OdinUICollectionViewSimpleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D891A8922284219300C4BA34 /* OdinUICollectionViewSimpleCell.h */; };
+		D891A8952284219300C4BA34 /* OdinUICollectionViewSimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D891A8932284219300C4BA34 /* OdinUICollectionViewSimpleCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D880D63F226DA1C0000C0780 /* OdinShareSDKUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OdinShareSDKUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D880D642226DA1C0000C0780 /* OdinShareSDKUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinShareSDKUI.h; sourceTree = "<group>"; };
+		D880D643226DA1C0000C0780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D880D651226DA373000C0780 /* OdinUICollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinUICollectionViewCell.m; sourceTree = "<group>"; };
+		D880D652226DA373000C0780 /* OdinUIPlatformItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinUIPlatformItem.h; sourceTree = "<group>"; };
+		D880D653226DA373000C0780 /* OdinUIShareSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinUIShareSheetViewController.m; sourceTree = "<group>"; };
+		D880D654226DA373000C0780 /* OdinUICollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinUICollectionViewLayout.m; sourceTree = "<group>"; };
+		D880D655226DA373000C0780 /* OdinUIShareSheetConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinUIShareSheetConfiguration.h; sourceTree = "<group>"; };
+		D880D656226DA373000C0780 /* OdinUIShareSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinUIShareSheetViewController.h; sourceTree = "<group>"; };
+		D880D657226DA373000C0780 /* OdinUIPlatformItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinUIPlatformItem.m; sourceTree = "<group>"; };
+		D880D658226DA373000C0780 /* OdinUICollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinUICollectionViewCell.h; sourceTree = "<group>"; };
+		D880D659226DA373000C0780 /* OdinUICollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinUICollectionViewLayout.h; sourceTree = "<group>"; };
+		D880D65A226DA373000C0780 /* OdinUIShareSheetConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinUIShareSheetConfiguration.m; sourceTree = "<group>"; };
+		D880D65B226DA373000C0780 /* OdinUIConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinUIConst.h; sourceTree = "<group>"; };
+		D880D65D226DA374000C0780 /* OdinColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinColor.m; sourceTree = "<group>"; };
+		D880D65E226DA374000C0780 /* OdinImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinImage.h; sourceTree = "<group>"; };
+		D880D65F226DA374000C0780 /* OdinDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinDevice.m; sourceTree = "<group>"; };
+		D880D660226DA374000C0780 /* OdinImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinImage.m; sourceTree = "<group>"; };
+		D880D661226DA374000C0780 /* OdinColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinColor.h; sourceTree = "<group>"; };
+		D880D662226DA374000C0780 /* OdinDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinDevice.h; sourceTree = "<group>"; };
+		D880D663226DA374000C0780 /* OdinUIConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinUIConst.m; sourceTree = "<group>"; };
+		D880D676226DA84B000C0780 /* OdinSocialUIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinSocialUIManager.h; sourceTree = "<group>"; };
+		D880D677226DA84B000C0780 /* OdinSocialUIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinSocialUIManager.m; sourceTree = "<group>"; };
+		D891A8922284219300C4BA34 /* OdinUICollectionViewSimpleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinUICollectionViewSimpleCell.h; sourceTree = "<group>"; };
+		D891A8932284219300C4BA34 /* OdinUICollectionViewSimpleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinUICollectionViewSimpleCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D880D63C226DA1C0000C0780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D880D635226DA1C0000C0780 = {
+			isa = PBXGroup;
+			children = (
+				D880D641226DA1C0000C0780 /* OdinShareSDKUI */,
+				D880D640226DA1C0000C0780 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D880D640226DA1C0000C0780 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D880D63F226DA1C0000C0780 /* OdinShareSDKUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D880D641226DA1C0000C0780 /* OdinShareSDKUI */ = {
+			isa = PBXGroup;
+			children = (
+				D880D65B226DA373000C0780 /* OdinUIConst.h */,
+				D880D663226DA374000C0780 /* OdinUIConst.m */,
+				D880D650226DA373000C0780 /* ShareSheet */,
+				D880D65C226DA374000C0780 /* Util */,
+				D880D642226DA1C0000C0780 /* OdinShareSDKUI.h */,
+				D880D643226DA1C0000C0780 /* Info.plist */,
+				D880D676226DA84B000C0780 /* OdinSocialUIManager.h */,
+				D880D677226DA84B000C0780 /* OdinSocialUIManager.m */,
+			);
+			path = OdinShareSDKUI;
+			sourceTree = "<group>";
+		};
+		D880D650226DA373000C0780 /* ShareSheet */ = {
+			isa = PBXGroup;
+			children = (
+				D880D652226DA373000C0780 /* OdinUIPlatformItem.h */,
+				D880D657226DA373000C0780 /* OdinUIPlatformItem.m */,
+				D880D654226DA373000C0780 /* OdinUICollectionViewLayout.m */,
+				D880D659226DA373000C0780 /* OdinUICollectionViewLayout.h */,
+				D880D655226DA373000C0780 /* OdinUIShareSheetConfiguration.h */,
+				D880D65A226DA373000C0780 /* OdinUIShareSheetConfiguration.m */,
+				D880D656226DA373000C0780 /* OdinUIShareSheetViewController.h */,
+				D880D653226DA373000C0780 /* OdinUIShareSheetViewController.m */,
+				D880D658226DA373000C0780 /* OdinUICollectionViewCell.h */,
+				D880D651226DA373000C0780 /* OdinUICollectionViewCell.m */,
+				D891A8922284219300C4BA34 /* OdinUICollectionViewSimpleCell.h */,
+				D891A8932284219300C4BA34 /* OdinUICollectionViewSimpleCell.m */,
+			);
+			path = ShareSheet;
+			sourceTree = "<group>";
+		};
+		D880D65C226DA374000C0780 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D880D65D226DA374000C0780 /* OdinColor.m */,
+				D880D65E226DA374000C0780 /* OdinImage.h */,
+				D880D65F226DA374000C0780 /* OdinDevice.m */,
+				D880D660226DA374000C0780 /* OdinImage.m */,
+				D880D661226DA374000C0780 /* OdinColor.h */,
+				D880D662226DA374000C0780 /* OdinDevice.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D880D63A226DA1C0000C0780 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D880D678226DA84B000C0780 /* OdinSocialUIManager.h in Headers */,
+				D880D669226DA374000C0780 /* OdinUIShareSheetViewController.h in Headers */,
+				D880D665226DA374000C0780 /* OdinUIPlatformItem.h in Headers */,
+				D880D670226DA374000C0780 /* OdinImage.h in Headers */,
+				D880D66E226DA374000C0780 /* OdinUIConst.h in Headers */,
+				D880D668226DA374000C0780 /* OdinUIShareSheetConfiguration.h in Headers */,
+				D880D66B226DA374000C0780 /* OdinUICollectionViewCell.h in Headers */,
+				D880D673226DA374000C0780 /* OdinColor.h in Headers */,
+				D880D674226DA374000C0780 /* OdinDevice.h in Headers */,
+				D880D66C226DA374000C0780 /* OdinUICollectionViewLayout.h in Headers */,
+				D891A8942284219300C4BA34 /* OdinUICollectionViewSimpleCell.h in Headers */,
+				D880D644226DA1C0000C0780 /* OdinShareSDKUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D880D63E226DA1C0000C0780 /* OdinShareSDKUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D880D647226DA1C0000C0780 /* Build configuration list for PBXNativeTarget "OdinShareSDKUI" */;
+			buildPhases = (
+				D880D63A226DA1C0000C0780 /* Headers */,
+				D880D63B226DA1C0000C0780 /* Sources */,
+				D880D63C226DA1C0000C0780 /* Frameworks */,
+				D880D63D226DA1C0000C0780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OdinShareSDKUI;
+			productName = OdinShareSDKUI;
+			productReference = D880D63F226DA1C0000C0780 /* OdinShareSDKUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D880D636226DA1C0000C0780 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Odin;
+				TargetAttributes = {
+					D880D63E226DA1C0000C0780 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D880D639226DA1C0000C0780 /* Build configuration list for PBXProject "OdinShareSDKUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D880D635226DA1C0000C0780;
+			productRefGroup = D880D640226DA1C0000C0780 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D880D63E226DA1C0000C0780 /* OdinShareSDKUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D880D63D226DA1C0000C0780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D880D63B226DA1C0000C0780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D880D66D226DA374000C0780 /* OdinUIShareSheetConfiguration.m in Sources */,
+				D880D671226DA374000C0780 /* OdinDevice.m in Sources */,
+				D880D66A226DA374000C0780 /* OdinUIPlatformItem.m in Sources */,
+				D880D667226DA374000C0780 /* OdinUICollectionViewLayout.m in Sources */,
+				D880D664226DA374000C0780 /* OdinUICollectionViewCell.m in Sources */,
+				D891A8952284219300C4BA34 /* OdinUICollectionViewSimpleCell.m in Sources */,
+				D880D672226DA374000C0780 /* OdinImage.m in Sources */,
+				D880D679226DA84B000C0780 /* OdinSocialUIManager.m in Sources */,
+				D880D66F226DA374000C0780 /* OdinColor.m in Sources */,
+				D880D666226DA374000C0780 /* OdinUIShareSheetViewController.m in Sources */,
+				D880D675226DA374000C0780 /* OdinUIConst.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D880D645226DA1C0000C0780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D880D646226DA1C0000C0780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D880D648226DA1C0000C0780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OdinShareSDKUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Odin.OdinShareSDKUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D880D649226DA1C0000C0780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OdinShareSDKUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Odin.OdinShareSDKUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D880D639226DA1C0000C0780 /* Build configuration list for PBXProject "OdinShareSDKUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D880D645226DA1C0000C0780 /* Debug */,
+				D880D646226DA1C0000C0780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D880D647226DA1C0000C0780 /* Build configuration list for PBXNativeTarget "OdinShareSDKUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D880D648226DA1C0000C0780 /* Debug */,
+				D880D649226DA1C0000C0780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D880D636226DA1C0000C0780 /* Project object */;
+}

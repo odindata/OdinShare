@@ -1,0 +1,32 @@
+PODS:
+  - IQKeyboardManager (6.2.1)
+  - MBProgressHUD (1.1.0)
+  - MJExtension (3.0.16)
+  - WechatOpenSDK (1.8.4)
+  - Weibo_SDK (3.2.3)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - MBProgressHUD (~> 1.1.0)
+  - MJExtension
+  - WechatOpenSDK
+  - Weibo_SDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IQKeyboardManager
+    - MBProgressHUD
+    - MJExtension
+    - WechatOpenSDK
+    - Weibo_SDK
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: 54dbbf6ee728f1a88e9aad904353d007831c7847
+  WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
+  Weibo_SDK: 652ca78c2f7147a5de5e75e7cbea89838a81772a
+
+PODFILE CHECKSUM: f592e705c0fb61b304e744b03694a62e435a2e8a
+
+COCOAPODS: 1.6.1

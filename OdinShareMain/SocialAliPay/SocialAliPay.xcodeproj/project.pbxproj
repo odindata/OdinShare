@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D845801C225AE7E10068C0A3 /* OdinShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D845801B225AE7E10068C0A3 /* OdinShareSDK.framework */; };
+		D8458022225AE82A0068C0A3 /* OdinSocialAliPayHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D8458021225AE82A0068C0A3 /* OdinSocialAliPayHandler.m */; };
+		D8458023225AE8310068C0A3 /* OdinSocialAliPayHandler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8458020225AE82A0068C0A3 /* OdinSocialAliPayHandler.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D845800C225AE7470068C0A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D8458023225AE8310068C0A3 /* OdinSocialAliPayHandler.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D845800E225AE7470068C0A3 /* libSocialAliPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocialAliPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D845801B225AE7E10068C0A3 /* OdinShareSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OdinShareSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8458020225AE82A0068C0A3 /* OdinSocialAliPayHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinSocialAliPayHandler.h; sourceTree = "<group>"; };
+		D8458021225AE82A0068C0A3 /* OdinSocialAliPayHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinSocialAliPayHandler.m; sourceTree = "<group>"; };
+		D8458026225AE8FB0068C0A3 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		D8458028225AE8FB0068C0A3 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		D8458029225AE8FB0068C0A3 /* 更新历史.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "更新历史.txt"; sourceTree = "<group>"; };
+		D845802A225AE8FB0068C0A3 /* 说明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "说明.txt"; sourceTree = "<group>"; };
+		D845802C225AE8FB0068C0A3 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		D845802E225AE8FB0068C0A3 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		D8458030225AE8FB0068C0A3 /* APOpenAPIObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOpenAPIObject.h; sourceTree = "<group>"; };
+		D8458031225AE8FB0068C0A3 /* APOpenAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOpenAPI.h; sourceTree = "<group>"; };
+		D8458033225AE8FB0068C0A3 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		D8458035225AE8FB0068C0A3 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D845800B225AE7470068C0A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D845801C225AE7E10068C0A3 /* OdinShareSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8458005225AE7470068C0A3 = {
+			isa = PBXGroup;
+			children = (
+				D8458010225AE7470068C0A3 /* SocialAliPay */,
+				D845800F225AE7470068C0A3 /* Products */,
+				D845801A225AE7E10068C0A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D845800F225AE7470068C0A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D845800E225AE7470068C0A3 /* libSocialAliPay.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8458010225AE7470068C0A3 /* SocialAliPay */ = {
+			isa = PBXGroup;
+			children = (
+				D8458024225AE8FB0068C0A3 /* APOpenSdk */,
+				D8458020225AE82A0068C0A3 /* OdinSocialAliPayHandler.h */,
+				D8458021225AE82A0068C0A3 /* OdinSocialAliPayHandler.m */,
+			);
+			path = SocialAliPay;
+			sourceTree = "<group>";
+		};
+		D845801A225AE7E10068C0A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D845801B225AE7E10068C0A3 /* OdinShareSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8458024225AE8FB0068C0A3 /* APOpenSdk */ = {
+			isa = PBXGroup;
+			children = (
+				D8458025225AE8FB0068C0A3 /* 真机&模拟器bitcode */,
+				D8458027225AE8FB0068C0A3 /* 模拟器 */,
+				D8458029225AE8FB0068C0A3 /* 更新历史.txt */,
+				D845802A225AE8FB0068C0A3 /* 说明.txt */,
+				D845802B225AE8FB0068C0A3 /* 真机 */,
+				D845802D225AE8FB0068C0A3 /* 真机&模拟器 */,
+				D845802F225AE8FB0068C0A3 /* Headers */,
+				D8458032225AE8FB0068C0A3 /* 真机bitcode */,
+				D8458034225AE8FB0068C0A3 /* 模拟器bitcode */,
+			);
+			path = APOpenSdk;
+			sourceTree = "<group>";
+		};
+		D8458025225AE8FB0068C0A3 /* 真机&模拟器bitcode */ = {
+			isa = PBXGroup;
+			children = (
+				D8458026225AE8FB0068C0A3 /* libAPOpenSdk.a */,
+			);
+			path = "真机&模拟器bitcode";
+			sourceTree = "<group>";
+		};
+		D8458027225AE8FB0068C0A3 /* 模拟器 */ = {
+			isa = PBXGroup;
+			children = (
+				D8458028225AE8FB0068C0A3 /* libAPOpenSdk.a */,
+			);
+			path = "模拟器";
+			sourceTree = "<group>";
+		};
+		D845802B225AE8FB0068C0A3 /* 真机 */ = {
+			isa = PBXGroup;
+			children = (
+				D845802C225AE8FB0068C0A3 /* libAPOpenSdk.a */,
+			);
+			path = "真机";
+			sourceTree = "<group>";
+		};
+		D845802D225AE8FB0068C0A3 /* 真机&模拟器 */ = {
+			isa = PBXGroup;
+			children = (
+				D845802E225AE8FB0068C0A3 /* libAPOpenSdk.a */,
+			);
+			path = "真机&模拟器";
+			sourceTree = "<group>";
+		};
+		D845802F225AE8FB0068C0A3 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D8458030225AE8FB0068C0A3 /* APOpenAPIObject.h */,
+				D8458031225AE8FB0068C0A3 /* APOpenAPI.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		D8458032225AE8FB0068C0A3 /* 真机bitcode */ = {
+			isa = PBXGroup;
+			children = (
+				D8458033225AE8FB0068C0A3 /* libAPOpenSdk.a */,
+			);
+			path = "真机bitcode";
+			sourceTree = "<group>";
+		};
+		D8458034225AE8FB0068C0A3 /* 模拟器bitcode */ = {
+			isa = PBXGroup;
+			children = (
+				D8458035225AE8FB0068C0A3 /* libAPOpenSdk.a */,
+			);
+			path = "模拟器bitcode";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D845800D225AE7470068C0A3 /* SocialAliPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8458017225AE7470068C0A3 /* Build configuration list for PBXNativeTarget "SocialAliPay" */;
+			buildPhases = (
+				D845800A225AE7470068C0A3 /* Sources */,
+				D845800B225AE7470068C0A3 /* Frameworks */,
+				D845800C225AE7470068C0A3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialAliPay;
+			productName = SocialAliPay;
+			productReference = D845800E225AE7470068C0A3 /* libSocialAliPay.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8458006225AE7470068C0A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Odin;
+				TargetAttributes = {
+					D845800D225AE7470068C0A3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D8458009225AE7470068C0A3 /* Build configuration list for PBXProject "SocialAliPay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8458005225AE7470068C0A3;
+			productRefGroup = D845800F225AE7470068C0A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D845800D225AE7470068C0A3 /* SocialAliPay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D845800A225AE7470068C0A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8458022225AE82A0068C0A3 /* OdinSocialAliPayHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D8458015225AE7470068C0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8458016225AE7470068C0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8458018225AE7470068C0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialAliPay/AliLogin",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialAliPay/APOpenSdk/真机&模拟器bitcode",
+					"$(PROJECT_DIR)/SocialAliPay/APOpenSdk/模拟器",
+					"$(PROJECT_DIR)/SocialAliPay/APOpenSdk/真机",
+					"$(PROJECT_DIR)/SocialAliPay/APOpenSdk/真机&模拟器",
+					"$(PROJECT_DIR)/SocialAliPay/APOpenSdk/真机bitcode",
+					"$(PROJECT_DIR)/SocialAliPay/APOpenSdk/模拟器bitcode",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8458019225AE7470068C0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialAliPay/AliLogin",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialAliPay/APOpenSdk/真机&模拟器bitcode",
+					"$(PROJECT_DIR)/SocialAliPay/APOpenSdk/模拟器",
+					"$(PROJECT_DIR)/SocialAliPay/APOpenSdk/真机",
+					"$(PROJECT_DIR)/SocialAliPay/APOpenSdk/真机&模拟器",
+					"$(PROJECT_DIR)/SocialAliPay/APOpenSdk/真机bitcode",
+					"$(PROJECT_DIR)/SocialAliPay/APOpenSdk/模拟器bitcode",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8458009225AE7470068C0A3 /* Build configuration list for PBXProject "SocialAliPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8458015225AE7470068C0A3 /* Debug */,
+				D8458016225AE7470068C0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8458017225AE7470068C0A3 /* Build configuration list for PBXNativeTarget "SocialAliPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8458018225AE7470068C0A3 /* Debug */,
+				D8458019225AE7470068C0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8458006225AE7470068C0A3 /* Project object */;
+}

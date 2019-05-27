@@ -1,0 +1,1119 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D313514EB8B35E8E995709E /* libPods-OdinShareDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FB9193B298D2E6C1CD5CDA /* libPods-OdinShareDemo.a */; };
+		D8021FB622520D3700D7FF8B /* OdinQZoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8021FB522520D3700D7FF8B /* OdinQZoneViewController.m */; };
+		D8021FB92252FFD300D7FF8B /* OdinWechatmomentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8021FB82252FFD300D7FF8B /* OdinWechatmomentsViewController.m */; };
+		D81CF2E8225EECD9004C8B83 /* OdinAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D81CF2E6225EECD9004C8B83 /* OdinAuthViewController.m */; };
+		D81CF2E9225EECD9004C8B83 /* OdinAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81CF2E7225EECD9004C8B83 /* OdinAuthViewController.xib */; };
+		D81CF2ED225EEED8004C8B83 /* OdinFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D81CF2EB225EEED8004C8B83 /* OdinFColor.m */; };
+		D81CF2F0225EEF9B004C8B83 /* UIImage+KaImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D81CF2EF225EEF9B004C8B83 /* UIImage+KaImage.m */; };
+		D81CF2F5225EF061004C8B83 /* OdinUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D81CF2F3225EF061004C8B83 /* OdinUserInfoViewController.m */; };
+		D81CF2F6225EF061004C8B83 /* OdinUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81CF2F4225EF061004C8B83 /* OdinUserInfoViewController.xib */; };
+		D81CF2FA225F146B004C8B83 /* OdinUserInfoShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D81CF2F8225F146B004C8B83 /* OdinUserInfoShowViewController.m */; };
+		D81CF2FB225F146B004C8B83 /* OdinUserInfoShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81CF2F9225F146B004C8B83 /* OdinUserInfoShowViewController.xib */; };
+		D838287B22548F720052657B /* apm.mov in Resources */ = {isa = PBXBuildFile; fileRef = D838287A22548F710052657B /* apm.mov */; };
+		D83828BF2254BD110052657B /* OdinWechatfavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83828BE2254BD110052657B /* OdinWechatfavoritesViewController.m */; };
+		D83B958822656F4100B7CD63 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83B958622656F4100B7CD63 /* FBSDKShareKit.framework */; };
+		D83B958922656F4100B7CD63 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83B958722656F4100B7CD63 /* FBSDKCoreKit.framework */; };
+		D83B958F2265756100B7CD63 /* OdinFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83B958E2265756100B7CD63 /* OdinFacebookViewController.m */; };
+		D83B959222657B2000B7CD63 /* OdinTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83B959122657B2000B7CD63 /* OdinTwitterViewController.m */; };
+		D83B959522657BB800B7CD63 /* OdinInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83B959422657BB800B7CD63 /* OdinInstagramViewController.m */; };
+		D83B95B02265C17A00B7CD63 /* libSoicalInstagram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D83B95AF2265C17A00B7CD63 /* libSoicalInstagram.a */; };
+		D83B95DB22670A2800B7CD63 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83B95DA22670A2700B7CD63 /* Accounts.framework */; };
+		D83B95DF22670D4700B7CD63 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83B95DD22670D4700B7CD63 /* TwitterKit.framework */; };
+		D83B95E022670D4700B7CD63 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83B95DE22670D4700B7CD63 /* TwitterCore.framework */; };
+		D83B95E222670E3800B7CD63 /* libSocialTwitter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D83B95E122670E3800B7CD63 /* libSocialTwitter.a */; };
+		D83B95E422670E9600B7CD63 /* TwitterKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D83B95DD22670D4700B7CD63 /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D83B95E522670E9600B7CD63 /* TwitterCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D83B95DE22670D4700B7CD63 /* TwitterCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8457FF2225ADD500068C0A3 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8457FF1225ADD4F0068C0A3 /* TencentOpenAPI.framework */; };
+		D8457FF8225AE5620068C0A3 /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8457FF7225AE5620068C0A3 /* libSocialSina.a */; };
+		D8458001225AE5AE0068C0A3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D8457FFA225AE5AE0068C0A3 /* LICENSE */; };
+		D8458003225AE5AE0068C0A3 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8457FFD225AE5AE0068C0A3 /* libWeiboSDK.a */; };
+		D8458004225AE5AE0068C0A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D8458000225AE5AE0068C0A3 /* README.md */; };
+		D845803F225B14EF0068C0A3 /* OdinAliSocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D845803E225B14EF0068C0A3 /* OdinAliSocialViewController.m */; };
+		D8458059225B1E380068C0A3 /* libAPOpenSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8458049225B1E370068C0A3 /* libAPOpenSdk.a */; };
+		D845805A225B1E380068C0A3 /* libAPOpenSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D845804B225B1E370068C0A3 /* libAPOpenSdk.a */; };
+		D845805B225B1E390068C0A3 /* 更新历史.txt in Resources */ = {isa = PBXBuildFile; fileRef = D845804C225B1E370068C0A3 /* 更新历史.txt */; };
+		D845805C225B1E390068C0A3 /* 说明.txt in Resources */ = {isa = PBXBuildFile; fileRef = D845804D225B1E370068C0A3 /* 说明.txt */; };
+		D845805D225B1E390068C0A3 /* libAPOpenSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D845804F225B1E370068C0A3 /* libAPOpenSdk.a */; };
+		D845805E225B1E3A0068C0A3 /* libAPOpenSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8458051225B1E370068C0A3 /* libAPOpenSdk.a */; };
+		D845805F225B1E3B0068C0A3 /* libAPOpenSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8458056225B1E370068C0A3 /* libAPOpenSdk.a */; };
+		D8458060225B1E3B0068C0A3 /* libAPOpenSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8458058225B1E370068C0A3 /* libAPOpenSdk.a */; };
+		D8458064225B2B3E0068C0A3 /* OdinAliSocialmomentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8458063225B2B3E0068C0A3 /* OdinAliSocialmomentsViewController.m */; };
+		D8458084225B4B3D0068C0A3 /* OdinShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CAD8A42248AEFB007B0EC4 /* OdinShareSDK.framework */; };
+		D8458085225B4B7B0068C0A3 /* libSocialAliPay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8458043225B1C030068C0A3 /* libSocialAliPay.a */; };
+		D845808B225B4E2F0068C0A3 /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D83A0BF5224E0B9A00C34253 /* libSocialWeChat.a */; };
+		D847A392224B096700A775C5 /* OdinPlatformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D847A390224B096700A775C5 /* OdinPlatformViewController.m */; };
+		D847A393224B096700A775C5 /* OdinPlatformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D847A391224B096700A775C5 /* OdinPlatformViewController.xib */; };
+		D847A398224B13AA00A775C5 /* OdinShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D847A396224B13AA00A775C5 /* OdinShareViewController.m */; };
+		D847A399224B13AA00A775C5 /* OdinShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D847A397224B13AA00A775C5 /* OdinShareViewController.xib */; };
+		D847A39B224B170100A775C5 /* ShareSDKUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D847A39A224B170100A775C5 /* ShareSDKUI.bundle */; };
+		D847A3A0224B1BDC00A775C5 /* OdinWechatcontactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D847A39F224B1BDC00A775C5 /* OdinWechatcontactsViewController.m */; };
+		D847A3BF224B204200A775C5 /* closeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3A2224B204200A775C5 /* closeButton@2x.png */; };
+		D847A3C1224B204200A775C5 /* imageIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3A4224B204200A775C5 /* imageIcon@2x.png */; };
+		D847A3C3224B204200A775C5 /* shakeIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3A6224B204200A775C5 /* shakeIcon@2x.png */; };
+		D847A3C4224B204200A775C5 /* D45.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D847A3A7224B204200A775C5 /* D45.jpg */; };
+		D847A3C5224B204200A775C5 /* res6.gif in Resources */ = {isa = PBXBuildFile; fileRef = D847A3A8224B204200A775C5 /* res6.gif */; };
+		D847A3C6224B204200A775C5 /* emoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3A9224B204200A775C5 /* emoIcon@2x.png */; };
+		D847A3C7224B204200A775C5 /* cat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D847A3AA224B204200A775C5 /* cat.mp4 */; };
+		D847A3C8224B204200A775C5 /* textAndImageIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3AB224B204200A775C5 /* textAndImageIcon@2x.png */; };
+		D847A3CC224B204200A775C5 /* miniIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3AF224B204200A775C5 /* miniIcon@2x.png */; };
+		D847A3CD224B204200A775C5 /* shareIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3B0224B204200A775C5 /* shareIcon@2x.png */; };
+		D847A3CF224B204200A775C5 /* videoURLIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3B2224B204200A775C5 /* videoURLIcon@2x.png */; };
+		D847A3D0224B204200A775C5 /* mutImageIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3B3224B204200A775C5 /* mutImageIcon@2x.png */; };
+		D847A3D1224B204200A775C5 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D847A3B4224B204200A775C5 /* music.mp3 */; };
+		D847A3D2224B204200A775C5 /* shareImg.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3B5224B204200A775C5 /* shareImg.png */; };
+		D847A3D4224B204200A775C5 /* D11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D847A3B7224B204200A775C5 /* D11.jpg */; };
+		D847A3D5224B204200A775C5 /* COD13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D847A3B8224B204200A775C5 /* COD13.jpg */; };
+		D847A3D7224B204200A775C5 /* appInfoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3BA224B204200A775C5 /* appInfoIcon@2x.png */; };
+		D847A3D8224B204200A775C5 /* shakeShareIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3BB224B204200A775C5 /* shakeShareIcon@2x.png */; };
+		D847A3D9224B204200A775C5 /* videoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3BC224B204200A775C5 /* videoIcon@2x.png */; };
+		D847A3DA224B204200A775C5 /* webURLIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3BD224B204200A775C5 /* webURLIcon@2x.png */; };
+		D847A3DB224B204200A775C5 /* audioURLIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3BE224B204200A775C5 /* audioURLIcon@2x.png */; };
+		D8499D552276A89B00053B01 /* ShareCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8499D542276A89B00053B01 /* ShareCategoryCollectionViewCell.m */; };
+		D8499D582276AA6D00053B01 /* ShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8499D572276AA6D00053B01 /* ShareModel.m */; };
+		D880D64B226DA1E6000C0780 /* OdinShareSDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D880D64A226DA1E6000C0780 /* OdinShareSDKUI.framework */; };
+		D88C82822245D855003125AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C82812245D855003125AC /* AppDelegate.m */; };
+		D88C82852245D855003125AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C82842245D855003125AC /* ViewController.m */; };
+		D88C82882245D855003125AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88C82862245D855003125AC /* Main.storyboard */; };
+		D88C828A2245D856003125AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88C82892245D856003125AC /* Assets.xcassets */; };
+		D88C828D2245D856003125AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88C828B2245D856003125AC /* LaunchScreen.storyboard */; };
+		D88C82902245D856003125AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C828F2245D856003125AC /* main.m */; };
+		D894C38A22535791004D9C42 /* OdinSinaWeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D894C38922535791004D9C42 /* OdinSinaWeiboViewController.m */; };
+		D894C39A22535904004D9C42 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D894C39922535903004D9C42 /* Photos.framework */; };
+		D8994AA32251AEEE00FD5C0C /* OdinQQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8994AA22251AEEE00FD5C0C /* OdinQQViewController.m */; };
+		D8994AA52251B5FD00FD5C0C /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8994AA42251B5FD00FD5C0C /* libSocialQQ.a */; };
+		D8994AA82251B71400FD5C0C /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8994AA72251B71400FD5C0C /* TencentOpenAPI.framework */; };
+		D89CEB52226EB2C600FC4006 /* libSocialFacebook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D89CEB51226EB2C600FC4006 /* libSocialFacebook.a */; };
+		D89CEB6622729D2600FC4006 /* OdinInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D89CEB6422729D2600FC4006 /* OdinInputViewController.m */; };
+		D89CEB6722729D2600FC4006 /* OdinInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D89CEB6522729D2600FC4006 /* OdinInputViewController.xib */; };
+		D89CEB782272DB4900FC4006 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89CEB772272DB4900FC4006 /* FBSDKLoginKit.framework */; };
+		D8BC6AE72276E68B0038912F /* iphone4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D8BC6AE62276E68B0038912F /* iphone4.pdf */; };
+		D8BEDBEF2269BA7000A14EDD /* screenshotsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3A5224B204200A775C5 /* screenshotsIcon@2x.png */; };
+		D8BEDBF02269BA7000A14EDD /* textIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3AC224B204200A775C5 /* textIcon@2x.png */; };
+		D8BEDBF12269BA7000A14EDD /* shareMenuIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3B6224B204200A775C5 /* shareMenuIcon@2x.png */; };
+		D8BEDC3E226D613300A14EDD /* OdinFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BEDC3C226D613300A14EDD /* OdinFImage.m */; };
+		D8BEDC41226D616A00A14EDD /* OdinFDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BEDC40226D616A00A14EDD /* OdinFDevice.m */; };
+		D8C97194225C8C8800EF3269 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D8C97193225C8C8800EF3269 /* WeiboSDK.bundle */; };
+		D8D088282248721E000C4963 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D088272248721E000C4963 /* libc++.tbd */; };
+		D8D0882A22487283000C4963 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D0882922487283000C4963 /* SystemConfiguration.framework */; };
+		D8D0882C22487298000C4963 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D0882B22487298000C4963 /* libz.tbd */; };
+		D8D0882E224872A3000C4963 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D0882D224872A3000C4963 /* libsqlite3.tbd */; };
+		D8D08830224872B2000C4963 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D0882F224872B2000C4963 /* Security.framework */; };
+		D8D08832224872BE000C4963 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D08831224872BE000C4963 /* CoreTelephony.framework */; };
+		D8D9DC132261B902003DE4F2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D9DC122261B901003DE4F2 /* CoreMotion.framework */; };
+		D8D9DC152261B922003DE4F2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D9DC142261B922003DE4F2 /* CFNetwork.framework */; };
+		D8D9DC172261B92C003DE4F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D9DC162261B92B003DE4F2 /* UIKit.framework */; };
+		D8D9DC192261B935003DE4F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D9DC182261B935003DE4F2 /* CoreGraphics.framework */; };
+		D8D9DC1B2261B95C003DE4F2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D9DC1A2261B95C003DE4F2 /* QuartzCore.framework */; };
+		D8D9DC1D2261B96C003DE4F2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D9DC1C2261B96C003DE4F2 /* CoreText.framework */; };
+		D8D9DC1F2261B9AE003DE4F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D9DC1E2261B9AD003DE4F2 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D83B95E322670E8600B7CD63 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D83B95E422670E9600B7CD63 /* TwitterKit.framework in CopyFiles */,
+				D83B95E522670E9600B7CD63 /* TwitterCore.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		47FB9193B298D2E6C1CD5CDA /* libPods-OdinShareDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OdinShareDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC6B2C79CA0830A85F94F13 /* Pods-OdinShareDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdinShareDemo.debug.xcconfig"; path = "Target Support Files/Pods-OdinShareDemo/Pods-OdinShareDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		675EA0131713F7E537EA5FF8 /* Pods-OdinShareDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdinShareDemo.release.xcconfig"; path = "Target Support Files/Pods-OdinShareDemo/Pods-OdinShareDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D8021FB422520D3700D7FF8B /* OdinQZoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinQZoneViewController.h; sourceTree = "<group>"; };
+		D8021FB522520D3700D7FF8B /* OdinQZoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinQZoneViewController.m; sourceTree = "<group>"; };
+		D8021FB72252FFD300D7FF8B /* OdinWechatmomentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinWechatmomentsViewController.h; sourceTree = "<group>"; };
+		D8021FB82252FFD300D7FF8B /* OdinWechatmomentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinWechatmomentsViewController.m; sourceTree = "<group>"; };
+		D81CF2E5225EECD9004C8B83 /* OdinAuthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinAuthViewController.h; sourceTree = "<group>"; };
+		D81CF2E6225EECD9004C8B83 /* OdinAuthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinAuthViewController.m; sourceTree = "<group>"; };
+		D81CF2E7225EECD9004C8B83 /* OdinAuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OdinAuthViewController.xib; sourceTree = "<group>"; };
+		D81CF2EB225EEED8004C8B83 /* OdinFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinFColor.m; sourceTree = "<group>"; };
+		D81CF2EC225EEED8004C8B83 /* OdinFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinFColor.h; sourceTree = "<group>"; };
+		D81CF2EE225EEF90004C8B83 /* UIImage+KaImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KaImage.h"; sourceTree = "<group>"; };
+		D81CF2EF225EEF9B004C8B83 /* UIImage+KaImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KaImage.m"; sourceTree = "<group>"; };
+		D81CF2F2225EF061004C8B83 /* OdinUserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinUserInfoViewController.h; sourceTree = "<group>"; };
+		D81CF2F3225EF061004C8B83 /* OdinUserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinUserInfoViewController.m; sourceTree = "<group>"; };
+		D81CF2F4225EF061004C8B83 /* OdinUserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OdinUserInfoViewController.xib; sourceTree = "<group>"; };
+		D81CF2F7225F146B004C8B83 /* OdinUserInfoShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinUserInfoShowViewController.h; sourceTree = "<group>"; };
+		D81CF2F8225F146B004C8B83 /* OdinUserInfoShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinUserInfoShowViewController.m; sourceTree = "<group>"; };
+		D81CF2F9225F146B004C8B83 /* OdinUserInfoShowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OdinUserInfoShowViewController.xib; sourceTree = "<group>"; };
+		D838287A22548F710052657B /* apm.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = apm.mov; sourceTree = "<group>"; };
+		D83828BD2254BD110052657B /* OdinWechatfavoritesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinWechatfavoritesViewController.h; sourceTree = "<group>"; };
+		D83828BE2254BD110052657B /* OdinWechatfavoritesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinWechatfavoritesViewController.m; sourceTree = "<group>"; };
+		D83A0BF5224E0B9A00C34253 /* libSocialWeChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocialWeChat.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83B958622656F4100B7CD63 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		D83B958722656F4100B7CD63 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		D83B958D2265756100B7CD63 /* OdinFacebookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinFacebookViewController.h; sourceTree = "<group>"; };
+		D83B958E2265756100B7CD63 /* OdinFacebookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinFacebookViewController.m; sourceTree = "<group>"; };
+		D83B959022657B2000B7CD63 /* OdinTwitterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinTwitterViewController.h; sourceTree = "<group>"; };
+		D83B959122657B2000B7CD63 /* OdinTwitterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinTwitterViewController.m; sourceTree = "<group>"; };
+		D83B959322657BB800B7CD63 /* OdinInstagramViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinInstagramViewController.h; sourceTree = "<group>"; };
+		D83B959422657BB800B7CD63 /* OdinInstagramViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinInstagramViewController.m; sourceTree = "<group>"; };
+		D83B95AF2265C17A00B7CD63 /* libSoicalInstagram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSoicalInstagram.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83B95DA22670A2700B7CD63 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		D83B95DD22670D4700B7CD63 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		D83B95DE22670D4700B7CD63 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		D83B95E122670E3800B7CD63 /* libSocialTwitter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocialTwitter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8457FF1225ADD4F0068C0A3 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = ../SocialQQ/TencentOpenAPI.framework; sourceTree = "<group>"; };
+		D8457FF7225AE5620068C0A3 /* libSocialSina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocialSina.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8457FFA225AE5AE0068C0A3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D8457FFC225AE5AE0068C0A3 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		D8457FFD225AE5AE0068C0A3 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		D8457FFE225AE5AE0068C0A3 /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
+		D8457FFF225AE5AE0068C0A3 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		D8458000225AE5AE0068C0A3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D845803D225B14EF0068C0A3 /* OdinAliSocialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinAliSocialViewController.h; sourceTree = "<group>"; };
+		D845803E225B14EF0068C0A3 /* OdinAliSocialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinAliSocialViewController.m; sourceTree = "<group>"; };
+		D8458043225B1C030068C0A3 /* libSocialAliPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocialAliPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8458049225B1E370068C0A3 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		D845804B225B1E370068C0A3 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		D845804C225B1E370068C0A3 /* 更新历史.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "更新历史.txt"; sourceTree = "<group>"; };
+		D845804D225B1E370068C0A3 /* 说明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "说明.txt"; sourceTree = "<group>"; };
+		D845804F225B1E370068C0A3 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		D8458051225B1E370068C0A3 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		D8458053225B1E370068C0A3 /* APOpenAPIObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOpenAPIObject.h; sourceTree = "<group>"; };
+		D8458054225B1E370068C0A3 /* APOpenAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOpenAPI.h; sourceTree = "<group>"; };
+		D8458056225B1E370068C0A3 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		D8458058225B1E370068C0A3 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		D8458062225B2B3E0068C0A3 /* OdinAliSocialmomentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinAliSocialmomentsViewController.h; sourceTree = "<group>"; };
+		D8458063225B2B3E0068C0A3 /* OdinAliSocialmomentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinAliSocialmomentsViewController.m; sourceTree = "<group>"; };
+		D847A38F224B096700A775C5 /* OdinPlatformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinPlatformViewController.h; sourceTree = "<group>"; };
+		D847A390224B096700A775C5 /* OdinPlatformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinPlatformViewController.m; sourceTree = "<group>"; };
+		D847A391224B096700A775C5 /* OdinPlatformViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OdinPlatformViewController.xib; sourceTree = "<group>"; };
+		D847A395224B13AA00A775C5 /* OdinShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinShareViewController.h; sourceTree = "<group>"; };
+		D847A396224B13AA00A775C5 /* OdinShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinShareViewController.m; sourceTree = "<group>"; };
+		D847A397224B13AA00A775C5 /* OdinShareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OdinShareViewController.xib; sourceTree = "<group>"; };
+		D847A39A224B170100A775C5 /* ShareSDKUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDKUI.bundle; sourceTree = "<group>"; };
+		D847A39C224B19FB00A775C5 /* OdinShareDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinShareDemo.h; sourceTree = "<group>"; };
+		D847A39E224B1BDC00A775C5 /* OdinWechatcontactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinWechatcontactsViewController.h; sourceTree = "<group>"; };
+		D847A39F224B1BDC00A775C5 /* OdinWechatcontactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinWechatcontactsViewController.m; sourceTree = "<group>"; };
+		D847A3A2224B204200A775C5 /* closeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeButton@2x.png"; sourceTree = "<group>"; };
+		D847A3A4224B204200A775C5 /* imageIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imageIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3A5224B204200A775C5 /* screenshotsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshotsIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3A6224B204200A775C5 /* shakeIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shakeIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3A7224B204200A775C5 /* D45.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = D45.jpg; sourceTree = "<group>"; };
+		D847A3A8224B204200A775C5 /* res6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = res6.gif; sourceTree = "<group>"; };
+		D847A3A9224B204200A775C5 /* emoIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3AA224B204200A775C5 /* cat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cat.mp4; sourceTree = "<group>"; };
+		D847A3AB224B204200A775C5 /* textAndImageIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textAndImageIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3AC224B204200A775C5 /* textIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3AF224B204200A775C5 /* miniIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "miniIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3B0224B204200A775C5 /* shareIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3B2224B204200A775C5 /* videoURLIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoURLIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3B3224B204200A775C5 /* mutImageIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mutImageIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3B4224B204200A775C5 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		D847A3B5224B204200A775C5 /* shareImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareImg.png; sourceTree = "<group>"; };
+		D847A3B6224B204200A775C5 /* shareMenuIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareMenuIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3B7224B204200A775C5 /* D11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = D11.jpg; sourceTree = "<group>"; };
+		D847A3B8224B204200A775C5 /* COD13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = COD13.jpg; sourceTree = "<group>"; };
+		D847A3BA224B204200A775C5 /* appInfoIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appInfoIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3BB224B204200A775C5 /* shakeShareIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shakeShareIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3BC224B204200A775C5 /* videoIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3BD224B204200A775C5 /* webURLIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "webURLIcon@2x.png"; sourceTree = "<group>"; };
+		D847A3BE224B204200A775C5 /* audioURLIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audioURLIcon@2x.png"; sourceTree = "<group>"; };
+		D8499D532276A89B00053B01 /* ShareCategoryCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareCategoryCollectionViewCell.h; sourceTree = "<group>"; };
+		D8499D542276A89B00053B01 /* ShareCategoryCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareCategoryCollectionViewCell.m; sourceTree = "<group>"; };
+		D8499D562276AA6D00053B01 /* ShareModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareModel.h; sourceTree = "<group>"; };
+		D8499D572276AA6D00053B01 /* ShareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareModel.m; sourceTree = "<group>"; };
+		D880D64A226DA1E6000C0780 /* OdinShareSDKUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OdinShareSDKUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88C827D2245D855003125AC /* OdinShareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdinShareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88C82802245D855003125AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D88C82812245D855003125AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; wrapsLines = 1; };
+		D88C82832245D855003125AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D88C82842245D855003125AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D88C82872245D855003125AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D88C82892245D856003125AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D88C828C2245D856003125AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D88C828E2245D856003125AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88C828F2245D856003125AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D894C38822535791004D9C42 /* OdinSinaWeiboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinSinaWeiboViewController.h; sourceTree = "<group>"; };
+		D894C38922535791004D9C42 /* OdinSinaWeiboViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinSinaWeiboViewController.m; sourceTree = "<group>"; };
+		D894C39922535903004D9C42 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		D8994AA12251AEEE00FD5C0C /* OdinQQViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinQQViewController.h; sourceTree = "<group>"; };
+		D8994AA22251AEEE00FD5C0C /* OdinQQViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinQQViewController.m; sourceTree = "<group>"; };
+		D8994AA42251B5FD00FD5C0C /* libSocialQQ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocialQQ.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8994AA72251B71400FD5C0C /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		D89CEB51226EB2C600FC4006 /* libSocialFacebook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocialFacebook.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89CEB5E2270010D00FC4006 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D89CEB5F2270010D00FC4006 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D89CEB6322729D2600FC4006 /* OdinInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinInputViewController.h; sourceTree = "<group>"; };
+		D89CEB6422729D2600FC4006 /* OdinInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinInputViewController.m; sourceTree = "<group>"; };
+		D89CEB6522729D2600FC4006 /* OdinInputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OdinInputViewController.xib; sourceTree = "<group>"; };
+		D89CEB772272DB4900FC4006 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		D8BC6AE62276E68B0038912F /* iphone4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = iphone4.pdf; sourceTree = "<group>"; };
+		D8BEDC3C226D613300A14EDD /* OdinFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinFImage.m; sourceTree = "<group>"; };
+		D8BEDC3D226D613300A14EDD /* OdinFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinFImage.h; sourceTree = "<group>"; };
+		D8BEDC3F226D616A00A14EDD /* OdinFDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinFDevice.h; sourceTree = "<group>"; };
+		D8BEDC40226D616A00A14EDD /* OdinFDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdinFDevice.m; sourceTree = "<group>"; };
+		D8C97193225C8C8800EF3269 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		D8CAD8A42248AEFB007B0EC4 /* OdinShareSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OdinShareSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D088272248721E000C4963 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D8D0882922487283000C4963 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D8D0882B22487298000C4963 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D8D0882D224872A3000C4963 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D8D0882F224872B2000C4963 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D8D08831224872BE000C4963 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D8D9DC122261B901003DE4F2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D8D9DC142261B922003DE4F2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D8D9DC162261B92B003DE4F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8D9DC182261B935003DE4F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D8D9DC1A2261B95C003DE4F2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D8D9DC1C2261B96C003DE4F2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		D8D9DC1E2261B9AD003DE4F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D88C827A2245D855003125AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89CEB52226EB2C600FC4006 /* libSocialFacebook.a in Frameworks */,
+				D880D64B226DA1E6000C0780 /* OdinShareSDKUI.framework in Frameworks */,
+				D83B95E222670E3800B7CD63 /* libSocialTwitter.a in Frameworks */,
+				D83B95DB22670A2800B7CD63 /* Accounts.framework in Frameworks */,
+				D83B95B02265C17A00B7CD63 /* libSoicalInstagram.a in Frameworks */,
+				D8D9DC1F2261B9AE003DE4F2 /* Foundation.framework in Frameworks */,
+				D8D9DC1D2261B96C003DE4F2 /* CoreText.framework in Frameworks */,
+				D8D9DC1B2261B95C003DE4F2 /* QuartzCore.framework in Frameworks */,
+				D8D9DC192261B935003DE4F2 /* CoreGraphics.framework in Frameworks */,
+				D8D9DC172261B92C003DE4F2 /* UIKit.framework in Frameworks */,
+				D8D9DC152261B922003DE4F2 /* CFNetwork.framework in Frameworks */,
+				D8D9DC132261B902003DE4F2 /* CoreMotion.framework in Frameworks */,
+				D845808B225B4E2F0068C0A3 /* libSocialWeChat.a in Frameworks */,
+				D83B958822656F4100B7CD63 /* FBSDKShareKit.framework in Frameworks */,
+				D8458085225B4B7B0068C0A3 /* libSocialAliPay.a in Frameworks */,
+				D8458084225B4B3D0068C0A3 /* OdinShareSDK.framework in Frameworks */,
+				D83B95DF22670D4700B7CD63 /* TwitterKit.framework in Frameworks */,
+				D8457FF8225AE5620068C0A3 /* libSocialSina.a in Frameworks */,
+				D83B958922656F4100B7CD63 /* FBSDKCoreKit.framework in Frameworks */,
+				D845805F225B1E3B0068C0A3 /* libAPOpenSdk.a in Frameworks */,
+				D89CEB782272DB4900FC4006 /* FBSDKLoginKit.framework in Frameworks */,
+				D8457FF2225ADD500068C0A3 /* TencentOpenAPI.framework in Frameworks */,
+				D894C39A22535904004D9C42 /* Photos.framework in Frameworks */,
+				D8994AA52251B5FD00FD5C0C /* libSocialQQ.a in Frameworks */,
+				D8D08832224872BE000C4963 /* CoreTelephony.framework in Frameworks */,
+				D8D08830224872B2000C4963 /* Security.framework in Frameworks */,
+				D845805E225B1E3A0068C0A3 /* libAPOpenSdk.a in Frameworks */,
+				D8D0882E224872A3000C4963 /* libsqlite3.tbd in Frameworks */,
+				D845805A225B1E380068C0A3 /* libAPOpenSdk.a in Frameworks */,
+				D8458060225B1E3B0068C0A3 /* libAPOpenSdk.a in Frameworks */,
+				D8458059225B1E380068C0A3 /* libAPOpenSdk.a in Frameworks */,
+				D8D0882C22487298000C4963 /* libz.tbd in Frameworks */,
+				D8458003225AE5AE0068C0A3 /* libWeiboSDK.a in Frameworks */,
+				D8994AA82251B71400FD5C0C /* TencentOpenAPI.framework in Frameworks */,
+				D83B95E022670D4700B7CD63 /* TwitterCore.framework in Frameworks */,
+				D8D0882A22487283000C4963 /* SystemConfiguration.framework in Frameworks */,
+				D845805D225B1E390068C0A3 /* libAPOpenSdk.a in Frameworks */,
+				D8D088282248721E000C4963 /* libc++.tbd in Frameworks */,
+				4D313514EB8B35E8E995709E /* libPods-OdinShareDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91C517A1932B78689C95005F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FC6B2C79CA0830A85F94F13 /* Pods-OdinShareDemo.debug.xcconfig */,
+				675EA0131713F7E537EA5FF8 /* Pods-OdinShareDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		D81CF2E4225EECC7004C8B83 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D81CF2E5225EECD9004C8B83 /* OdinAuthViewController.h */,
+				D81CF2E6225EECD9004C8B83 /* OdinAuthViewController.m */,
+				D81CF2E7225EECD9004C8B83 /* OdinAuthViewController.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D81CF2EA225EEEC0004C8B83 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D8BEDC3F226D616A00A14EDD /* OdinFDevice.h */,
+				D8BEDC40226D616A00A14EDD /* OdinFDevice.m */,
+				D8BEDC3D226D613300A14EDD /* OdinFImage.h */,
+				D8BEDC3C226D613300A14EDD /* OdinFImage.m */,
+				D81CF2EF225EEF9B004C8B83 /* UIImage+KaImage.m */,
+				D81CF2EE225EEF90004C8B83 /* UIImage+KaImage.h */,
+				D81CF2EC225EEED8004C8B83 /* OdinFColor.h */,
+				D81CF2EB225EEED8004C8B83 /* OdinFColor.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D81CF2F1225EF042004C8B83 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D81CF2F2225EF061004C8B83 /* OdinUserInfoViewController.h */,
+				D81CF2F3225EF061004C8B83 /* OdinUserInfoViewController.m */,
+				D81CF2F4225EF061004C8B83 /* OdinUserInfoViewController.xib */,
+				D81CF2F7225F146B004C8B83 /* OdinUserInfoShowViewController.h */,
+				D81CF2F8225F146B004C8B83 /* OdinUserInfoShowViewController.m */,
+				D81CF2F9225F146B004C8B83 /* OdinUserInfoShowViewController.xib */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		D83B958522656F4100B7CD63 /* FacebookShare */ = {
+			isa = PBXGroup;
+			children = (
+				D89CEB772272DB4900FC4006 /* FBSDKLoginKit.framework */,
+				D83B958622656F4100B7CD63 /* FBSDKShareKit.framework */,
+				D83B958722656F4100B7CD63 /* FBSDKCoreKit.framework */,
+			);
+			path = FacebookShare;
+			sourceTree = "<group>";
+		};
+		D83B95DC22670D4700B7CD63 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				D83B95DD22670D4700B7CD63 /* TwitterKit.framework */,
+				D83B95DE22670D4700B7CD63 /* TwitterCore.framework */,
+			);
+			path = Twitter;
+			sourceTree = "<group>";
+		};
+		D8457FF9225AE5AE0068C0A3 /* Weibo_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				D8457FFA225AE5AE0068C0A3 /* LICENSE */,
+				D8457FFB225AE5AE0068C0A3 /* libWeiboSDK */,
+				D8458000225AE5AE0068C0A3 /* README.md */,
+			);
+			name = Weibo_SDK;
+			path = ../../../Pods/Weibo_SDK;
+			sourceTree = "<group>";
+		};
+		D8457FFB225AE5AE0068C0A3 /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D8457FFC225AE5AE0068C0A3 /* WeiboSDK.bundle */,
+				D8457FFD225AE5AE0068C0A3 /* libWeiboSDK.a */,
+				D8457FFE225AE5AE0068C0A3 /* WBHttpRequest.h */,
+				D8457FFF225AE5AE0068C0A3 /* WeiboSDK.h */,
+			);
+			path = libWeiboSDK;
+			sourceTree = "<group>";
+		};
+		D8458047225B1E370068C0A3 /* APOpenSdk */ = {
+			isa = PBXGroup;
+			children = (
+				D8458048225B1E370068C0A3 /* 真机&模拟器bitcode */,
+				D845804A225B1E370068C0A3 /* 模拟器 */,
+				D845804C225B1E370068C0A3 /* 更新历史.txt */,
+				D845804D225B1E370068C0A3 /* 说明.txt */,
+				D845804E225B1E370068C0A3 /* 真机 */,
+				D8458050225B1E370068C0A3 /* 真机&模拟器 */,
+				D8458052225B1E370068C0A3 /* Headers */,
+				D8458055225B1E370068C0A3 /* 真机bitcode */,
+				D8458057225B1E370068C0A3 /* 模拟器bitcode */,
+			);
+			path = APOpenSdk;
+			sourceTree = "<group>";
+		};
+		D8458048225B1E370068C0A3 /* 真机&模拟器bitcode */ = {
+			isa = PBXGroup;
+			children = (
+				D8458049225B1E370068C0A3 /* libAPOpenSdk.a */,
+			);
+			path = "真机&模拟器bitcode";
+			sourceTree = "<group>";
+		};
+		D845804A225B1E370068C0A3 /* 模拟器 */ = {
+			isa = PBXGroup;
+			children = (
+				D845804B225B1E370068C0A3 /* libAPOpenSdk.a */,
+			);
+			path = "模拟器";
+			sourceTree = "<group>";
+		};
+		D845804E225B1E370068C0A3 /* 真机 */ = {
+			isa = PBXGroup;
+			children = (
+				D845804F225B1E370068C0A3 /* libAPOpenSdk.a */,
+			);
+			path = "真机";
+			sourceTree = "<group>";
+		};
+		D8458050225B1E370068C0A3 /* 真机&模拟器 */ = {
+			isa = PBXGroup;
+			children = (
+				D8458051225B1E370068C0A3 /* libAPOpenSdk.a */,
+			);
+			path = "真机&模拟器";
+			sourceTree = "<group>";
+		};
+		D8458052225B1E370068C0A3 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D8458053225B1E370068C0A3 /* APOpenAPIObject.h */,
+				D8458054225B1E370068C0A3 /* APOpenAPI.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		D8458055225B1E370068C0A3 /* 真机bitcode */ = {
+			isa = PBXGroup;
+			children = (
+				D8458056225B1E370068C0A3 /* libAPOpenSdk.a */,
+			);
+			path = "真机bitcode";
+			sourceTree = "<group>";
+		};
+		D8458057225B1E370068C0A3 /* 模拟器bitcode */ = {
+			isa = PBXGroup;
+			children = (
+				D8458058225B1E370068C0A3 /* libAPOpenSdk.a */,
+			);
+			path = "模拟器bitcode";
+			sourceTree = "<group>";
+		};
+		D847A394224B139500A775C5 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				D847A39A224B170100A775C5 /* ShareSDKUI.bundle */,
+				D847A395224B13AA00A775C5 /* OdinShareViewController.h */,
+				D847A396224B13AA00A775C5 /* OdinShareViewController.m */,
+				D847A397224B13AA00A775C5 /* OdinShareViewController.xib */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		D847A39D224B1BBC00A775C5 /* SharePlatformViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D847A39E224B1BDC00A775C5 /* OdinWechatcontactsViewController.h */,
+				D847A39F224B1BDC00A775C5 /* OdinWechatcontactsViewController.m */,
+				D8021FB72252FFD300D7FF8B /* OdinWechatmomentsViewController.h */,
+				D8021FB82252FFD300D7FF8B /* OdinWechatmomentsViewController.m */,
+				D83828BD2254BD110052657B /* OdinWechatfavoritesViewController.h */,
+				D83828BE2254BD110052657B /* OdinWechatfavoritesViewController.m */,
+				D8994AA12251AEEE00FD5C0C /* OdinQQViewController.h */,
+				D8994AA22251AEEE00FD5C0C /* OdinQQViewController.m */,
+				D8021FB422520D3700D7FF8B /* OdinQZoneViewController.h */,
+				D8021FB522520D3700D7FF8B /* OdinQZoneViewController.m */,
+				D894C38822535791004D9C42 /* OdinSinaWeiboViewController.h */,
+				D894C38922535791004D9C42 /* OdinSinaWeiboViewController.m */,
+				D845803D225B14EF0068C0A3 /* OdinAliSocialViewController.h */,
+				D845803E225B14EF0068C0A3 /* OdinAliSocialViewController.m */,
+				D8458062225B2B3E0068C0A3 /* OdinAliSocialmomentsViewController.h */,
+				D8458063225B2B3E0068C0A3 /* OdinAliSocialmomentsViewController.m */,
+				D83B958D2265756100B7CD63 /* OdinFacebookViewController.h */,
+				D83B958E2265756100B7CD63 /* OdinFacebookViewController.m */,
+				D83B959022657B2000B7CD63 /* OdinTwitterViewController.h */,
+				D83B959122657B2000B7CD63 /* OdinTwitterViewController.m */,
+				D83B959322657BB800B7CD63 /* OdinInstagramViewController.h */,
+				D83B959422657BB800B7CD63 /* OdinInstagramViewController.m */,
+			);
+			path = SharePlatformViewControllers;
+			sourceTree = "<group>";
+		};
+		D847A3A1224B204200A775C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8C97193225C8C8800EF3269 /* WeiboSDK.bundle */,
+				D838287A22548F710052657B /* apm.mov */,
+				D847A3A2224B204200A775C5 /* closeButton@2x.png */,
+				D847A3A4224B204200A775C5 /* imageIcon@2x.png */,
+				D847A3A5224B204200A775C5 /* screenshotsIcon@2x.png */,
+				D847A3A6224B204200A775C5 /* shakeIcon@2x.png */,
+				D847A3A7224B204200A775C5 /* D45.jpg */,
+				D8BC6AE62276E68B0038912F /* iphone4.pdf */,
+				D847A3A8224B204200A775C5 /* res6.gif */,
+				D847A3A9224B204200A775C5 /* emoIcon@2x.png */,
+				D847A3AA224B204200A775C5 /* cat.mp4 */,
+				D847A3AB224B204200A775C5 /* textAndImageIcon@2x.png */,
+				D847A3AC224B204200A775C5 /* textIcon@2x.png */,
+				D847A3AF224B204200A775C5 /* miniIcon@2x.png */,
+				D847A3B0224B204200A775C5 /* shareIcon@2x.png */,
+				D847A3B2224B204200A775C5 /* videoURLIcon@2x.png */,
+				D847A3B3224B204200A775C5 /* mutImageIcon@2x.png */,
+				D847A3B4224B204200A775C5 /* music.mp3 */,
+				D847A3B5224B204200A775C5 /* shareImg.png */,
+				D847A3B6224B204200A775C5 /* shareMenuIcon@2x.png */,
+				D847A3B7224B204200A775C5 /* D11.jpg */,
+				D847A3B8224B204200A775C5 /* COD13.jpg */,
+				D847A3BA224B204200A775C5 /* appInfoIcon@2x.png */,
+				D847A3BB224B204200A775C5 /* shakeShareIcon@2x.png */,
+				D847A3BC224B204200A775C5 /* videoIcon@2x.png */,
+				D847A3BD224B204200A775C5 /* webURLIcon@2x.png */,
+				D847A3BE224B204200A775C5 /* audioURLIcon@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D88C82742245D855003125AC = {
+			isa = PBXGroup;
+			children = (
+				D88C827F2245D855003125AC /* OdinShareDemo */,
+				D88C827E2245D855003125AC /* Products */,
+				D88C82AB2245D8CA003125AC /* Frameworks */,
+				91C517A1932B78689C95005F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D88C827E2245D855003125AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D88C827D2245D855003125AC /* OdinShareDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D88C827F2245D855003125AC /* OdinShareDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D89CEB6222729CC200FC4006 /* UserInput */,
+				D81CF2F1225EF042004C8B83 /* UserInfo */,
+				D81CF2EA225EEEC0004C8B83 /* Utils */,
+				D81CF2E4225EECC7004C8B83 /* Auth */,
+				D8994AA62251B71400FD5C0C /* SocialLib */,
+				D847A3A1224B204200A775C5 /* Resources */,
+				D847A39D224B1BBC00A775C5 /* SharePlatformViewControllers */,
+				D847A394224B139500A775C5 /* Share */,
+				D88C82802245D855003125AC /* AppDelegate.h */,
+				D88C82812245D855003125AC /* AppDelegate.m */,
+				D88C82832245D855003125AC /* ViewController.h */,
+				D88C82842245D855003125AC /* ViewController.m */,
+				D88C82862245D855003125AC /* Main.storyboard */,
+				D88C82892245D856003125AC /* Assets.xcassets */,
+				D88C828B2245D856003125AC /* LaunchScreen.storyboard */,
+				D88C828E2245D856003125AC /* Info.plist */,
+				D88C828F2245D856003125AC /* main.m */,
+				D847A38F224B096700A775C5 /* OdinPlatformViewController.h */,
+				D847A390224B096700A775C5 /* OdinPlatformViewController.m */,
+				D847A391224B096700A775C5 /* OdinPlatformViewController.xib */,
+				D847A39C224B19FB00A775C5 /* OdinShareDemo.h */,
+			);
+			path = OdinShareDemo;
+			sourceTree = "<group>";
+		};
+		D88C82AB2245D8CA003125AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D89CEB51226EB2C600FC4006 /* libSocialFacebook.a */,
+				D880D64A226DA1E6000C0780 /* OdinShareSDKUI.framework */,
+				D83B95E122670E3800B7CD63 /* libSocialTwitter.a */,
+				D83B95DA22670A2700B7CD63 /* Accounts.framework */,
+				D83B95AF2265C17A00B7CD63 /* libSoicalInstagram.a */,
+				D8D9DC1E2261B9AD003DE4F2 /* Foundation.framework */,
+				D8D9DC1C2261B96C003DE4F2 /* CoreText.framework */,
+				D8D9DC1A2261B95C003DE4F2 /* QuartzCore.framework */,
+				D8D9DC182261B935003DE4F2 /* CoreGraphics.framework */,
+				D8D9DC162261B92B003DE4F2 /* UIKit.framework */,
+				D8D9DC142261B922003DE4F2 /* CFNetwork.framework */,
+				D8D9DC122261B901003DE4F2 /* CoreMotion.framework */,
+				D8458043225B1C030068C0A3 /* libSocialAliPay.a */,
+				D8457FF7225AE5620068C0A3 /* libSocialSina.a */,
+				D8457FF1225ADD4F0068C0A3 /* TencentOpenAPI.framework */,
+				D894C39922535903004D9C42 /* Photos.framework */,
+				D8994AA42251B5FD00FD5C0C /* libSocialQQ.a */,
+				D83A0BF5224E0B9A00C34253 /* libSocialWeChat.a */,
+				D8CAD8A42248AEFB007B0EC4 /* OdinShareSDK.framework */,
+				D8D08831224872BE000C4963 /* CoreTelephony.framework */,
+				D8D0882F224872B2000C4963 /* Security.framework */,
+				D8D0882D224872A3000C4963 /* libsqlite3.tbd */,
+				D8D0882B22487298000C4963 /* libz.tbd */,
+				D8D0882922487283000C4963 /* SystemConfiguration.framework */,
+				D8D088272248721E000C4963 /* libc++.tbd */,
+				47FB9193B298D2E6C1CD5CDA /* libPods-OdinShareDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8994AA62251B71400FD5C0C /* SocialLib */ = {
+			isa = PBXGroup;
+			children = (
+				D83B95DC22670D4700B7CD63 /* Twitter */,
+				D83B958522656F4100B7CD63 /* FacebookShare */,
+				D8458047225B1E370068C0A3 /* APOpenSdk */,
+				D8457FF9225AE5AE0068C0A3 /* Weibo_SDK */,
+				D8994AA72251B71400FD5C0C /* TencentOpenAPI.framework */,
+			);
+			path = SocialLib;
+			sourceTree = "<group>";
+		};
+		D89CEB6222729CC200FC4006 /* UserInput */ = {
+			isa = PBXGroup;
+			children = (
+				D89CEB6322729D2600FC4006 /* OdinInputViewController.h */,
+				D89CEB6422729D2600FC4006 /* OdinInputViewController.m */,
+				D89CEB6522729D2600FC4006 /* OdinInputViewController.xib */,
+				D8499D532276A89B00053B01 /* ShareCategoryCollectionViewCell.h */,
+				D8499D542276A89B00053B01 /* ShareCategoryCollectionViewCell.m */,
+				D8499D562276AA6D00053B01 /* ShareModel.h */,
+				D8499D572276AA6D00053B01 /* ShareModel.m */,
+			);
+			path = UserInput;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D88C827C2245D855003125AC /* OdinShareDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D88C82932245D856003125AC /* Build configuration list for PBXNativeTarget "OdinShareDemo" */;
+			buildPhases = (
+				84D1E65408A320D850C550A8 /* [CP] Check Pods Manifest.lock */,
+				D88C82792245D855003125AC /* Sources */,
+				D88C827A2245D855003125AC /* Frameworks */,
+				D88C827B2245D855003125AC /* Resources */,
+				E0303CD20DFEA439A2D6C497 /* [CP] Copy Pods Resources */,
+				D83B95E322670E8600B7CD63 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OdinShareDemo;
+			productName = OdinShareDemo;
+			productReference = D88C827D2245D855003125AC /* OdinShareDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D88C82752245D855003125AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Odin;
+				TargetAttributes = {
+					D88C827C2245D855003125AC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D88C82782245D855003125AC /* Build configuration list for PBXProject "OdinShareDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = D88C82742245D855003125AC;
+			productRefGroup = D88C827E2245D855003125AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D88C827C2245D855003125AC /* OdinShareDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D88C827B2245D855003125AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BEDBEF2269BA7000A14EDD /* screenshotsIcon@2x.png in Resources */,
+				D8BEDBF02269BA7000A14EDD /* textIcon@2x.png in Resources */,
+				D8BEDBF12269BA7000A14EDD /* shareMenuIcon@2x.png in Resources */,
+				D847A3D4224B204200A775C5 /* D11.jpg in Resources */,
+				D847A3D7224B204200A775C5 /* appInfoIcon@2x.png in Resources */,
+				D81CF2FB225F146B004C8B83 /* OdinUserInfoShowViewController.xib in Resources */,
+				D847A3CF224B204200A775C5 /* videoURLIcon@2x.png in Resources */,
+				D847A3DA224B204200A775C5 /* webURLIcon@2x.png in Resources */,
+				D81CF2E9225EECD9004C8B83 /* OdinAuthViewController.xib in Resources */,
+				D8458001225AE5AE0068C0A3 /* LICENSE in Resources */,
+				D8C97194225C8C8800EF3269 /* WeiboSDK.bundle in Resources */,
+				D847A3C1224B204200A775C5 /* imageIcon@2x.png in Resources */,
+				D847A399224B13AA00A775C5 /* OdinShareViewController.xib in Resources */,
+				D847A3D9224B204200A775C5 /* videoIcon@2x.png in Resources */,
+				D847A3BF224B204200A775C5 /* closeButton@2x.png in Resources */,
+				D81CF2F6225EF061004C8B83 /* OdinUserInfoViewController.xib in Resources */,
+				D847A3C4224B204200A775C5 /* D45.jpg in Resources */,
+				D88C828D2245D856003125AC /* LaunchScreen.storyboard in Resources */,
+				D847A39B224B170100A775C5 /* ShareSDKUI.bundle in Resources */,
+				D847A3D2224B204200A775C5 /* shareImg.png in Resources */,
+				D847A3C6224B204200A775C5 /* emoIcon@2x.png in Resources */,
+				D8BC6AE72276E68B0038912F /* iphone4.pdf in Resources */,
+				D847A3CD224B204200A775C5 /* shareIcon@2x.png in Resources */,
+				D88C828A2245D856003125AC /* Assets.xcassets in Resources */,
+				D847A3DB224B204200A775C5 /* audioURLIcon@2x.png in Resources */,
+				D88C82882245D855003125AC /* Main.storyboard in Resources */,
+				D847A3D0224B204200A775C5 /* mutImageIcon@2x.png in Resources */,
+				D847A3D8224B204200A775C5 /* shakeShareIcon@2x.png in Resources */,
+				D847A3CC224B204200A775C5 /* miniIcon@2x.png in Resources */,
+				D8458004225AE5AE0068C0A3 /* README.md in Resources */,
+				D845805C225B1E390068C0A3 /* 说明.txt in Resources */,
+				D838287B22548F720052657B /* apm.mov in Resources */,
+				D847A3C8224B204200A775C5 /* textAndImageIcon@2x.png in Resources */,
+				D847A393224B096700A775C5 /* OdinPlatformViewController.xib in Resources */,
+				D845805B225B1E390068C0A3 /* 更新历史.txt in Resources */,
+				D847A3C3224B204200A775C5 /* shakeIcon@2x.png in Resources */,
+				D847A3D1224B204200A775C5 /* music.mp3 in Resources */,
+				D847A3D5224B204200A775C5 /* COD13.jpg in Resources */,
+				D89CEB6722729D2600FC4006 /* OdinInputViewController.xib in Resources */,
+				D847A3C5224B204200A775C5 /* res6.gif in Resources */,
+				D847A3C7224B204200A775C5 /* cat.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84D1E65408A320D850C550A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OdinShareDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0303CD20DFEA439A2D6C497 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OdinShareDemo/Pods-OdinShareDemo-resources.sh",
+				"${PODS_ROOT}/Weibo_SDK/libWeiboSDK/WeiboSDK.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OdinShareDemo/Pods-OdinShareDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D88C82792245D855003125AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D847A398224B13AA00A775C5 /* OdinShareViewController.m in Sources */,
+				D88C82852245D855003125AC /* ViewController.m in Sources */,
+				D83828BF2254BD110052657B /* OdinWechatfavoritesViewController.m in Sources */,
+				D8BEDC41226D616A00A14EDD /* OdinFDevice.m in Sources */,
+				D8021FB622520D3700D7FF8B /* OdinQZoneViewController.m in Sources */,
+				D8458064225B2B3E0068C0A3 /* OdinAliSocialmomentsViewController.m in Sources */,
+				D847A392224B096700A775C5 /* OdinPlatformViewController.m in Sources */,
+				D81CF2F5225EF061004C8B83 /* OdinUserInfoViewController.m in Sources */,
+				D81CF2E8225EECD9004C8B83 /* OdinAuthViewController.m in Sources */,
+				D81CF2F0225EEF9B004C8B83 /* UIImage+KaImage.m in Sources */,
+				D8BEDC3E226D613300A14EDD /* OdinFImage.m in Sources */,
+				D81CF2ED225EEED8004C8B83 /* OdinFColor.m in Sources */,
+				D8499D552276A89B00053B01 /* ShareCategoryCollectionViewCell.m in Sources */,
+				D88C82902245D856003125AC /* main.m in Sources */,
+				D845803F225B14EF0068C0A3 /* OdinAliSocialViewController.m in Sources */,
+				D8994AA32251AEEE00FD5C0C /* OdinQQViewController.m in Sources */,
+				D8021FB92252FFD300D7FF8B /* OdinWechatmomentsViewController.m in Sources */,
+				D83B959222657B2000B7CD63 /* OdinTwitterViewController.m in Sources */,
+				D81CF2FA225F146B004C8B83 /* OdinUserInfoShowViewController.m in Sources */,
+				D88C82822245D855003125AC /* AppDelegate.m in Sources */,
+				D83B959522657BB800B7CD63 /* OdinInstagramViewController.m in Sources */,
+				D8499D582276AA6D00053B01 /* ShareModel.m in Sources */,
+				D894C38A22535791004D9C42 /* OdinSinaWeiboViewController.m in Sources */,
+				D89CEB6622729D2600FC4006 /* OdinInputViewController.m in Sources */,
+				D83B958F2265756100B7CD63 /* OdinFacebookViewController.m in Sources */,
+				D847A3A0224B1BDC00A775C5 /* OdinWechatcontactsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D88C82862245D855003125AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D88C82872245D855003125AC /* Base */,
+				D89CEB5E2270010D00FC4006 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D88C828B2245D856003125AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D88C828C2245D856003125AC /* Base */,
+				D89CEB5F2270010D00FC4006 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D88C82912245D856003125AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D88C82922245D856003125AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D88C82942245D856003125AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FC6B2C79CA0830A85F94F13 /* Pods-OdinShareDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/AliLogin",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/FacebookShare",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/Twitter",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OdinShareDemo/OdinShareDemo.h";
+				INFOPLIST_FILE = OdinShareDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatSDK1.8.4",
+					"$(PROJECT_DIR)/OdinShareDemo/WeChatSDK1.8.4",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/WeChatSDK1.8.4",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/Weibo_SDK/libWeiboSDK",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/APOpenSdk/真机&模拟器bitcode",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/APOpenSdk/模拟器",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/APOpenSdk/真机",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/APOpenSdk/真机&模拟器",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/APOpenSdk/真机bitcode",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/APOpenSdk/模拟器bitcode",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mob.product.ShareSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64e armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		D88C82952245D856003125AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 675EA0131713F7E537EA5FF8 /* Pods-OdinShareDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/AliLogin",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/FacebookShare",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/Twitter",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OdinShareDemo/OdinShareDemo.h";
+				INFOPLIST_FILE = OdinShareDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatSDK1.8.4",
+					"$(PROJECT_DIR)/OdinShareDemo/WeChatSDK1.8.4",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/WeChatSDK1.8.4",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/Weibo_SDK/libWeiboSDK",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/APOpenSdk/真机&模拟器bitcode",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/APOpenSdk/模拟器",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/APOpenSdk/真机",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/APOpenSdk/真机&模拟器",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/APOpenSdk/真机bitcode",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/APOpenSdk/模拟器bitcode",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mob.product.ShareSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64e armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D88C82782245D855003125AC /* Build configuration list for PBXProject "OdinShareDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88C82912245D856003125AC /* Debug */,
+				D88C82922245D856003125AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D88C82932245D856003125AC /* Build configuration list for PBXNativeTarget "OdinShareDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88C82942245D856003125AC /* Debug */,
+				D88C82952245D856003125AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D88C82752245D855003125AC /* Project object */;
+}
