@@ -119,9 +119,11 @@ static OdinSocialManager *singleton = nil;
                   [self upLoadShareData:messageObject platformType:platformType shareStatus:1];
             }
         }
-        if (completion) {
-            completion(shareResponse,error);
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (completion) {
+                completion(shareResponse,error);
+            }
+        });
     }];
     
 }
@@ -145,7 +147,9 @@ static OdinSocialManager *singleton = nil;
             if (error.code==OdinSocialPlatformErrorType_Cancel) {
                 [self cancelAtuhData:platformType];
             }
-            completion(userInfoResponse,error);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion(userInfoResponse,error);
+            });
         }
     }];
 }
@@ -166,15 +170,12 @@ static OdinSocialManager *singleton = nil;
 
 //取消授权
 - (void)cancelAuthWithPlatform:(OdinSocialPlatformType)platformType
-completion:(OdinSocialRequestCompletionHandler)completion{
+                    completion:(OdinSocialRequestCompletionHandler)completion{
     NSString *platFormClassName=[self getPlatformClassName:platformType];
     [[NSClassFromString(platFormClassName) defaultManager] odinSocial_cancelAuthWithCompletionHandler:nil];
     NSString *appId= [[NSClassFromString(platFormClassName) defaultManager] valueForKey:@"appID"];
     NSString *domain = [NSString stringWithFormat:@"OdinShareSDK-Platform-%lu-%@",(unsigned long)[self loginType:platformType],appId];
     [[OdinDataService new]  clearDataForKey:@"currentUser" domain:domain];
-    if (completion) {
-        completion(nil,nil);
-    }
     
     NSMutableDictionary *odinShareDetailDic=[NSMutableDictionary dictionary];
     odinShareDetailDic[@"odinKey"]=Odin_ShareKey;
@@ -194,16 +195,22 @@ completion:(OdinSocialRequestCompletionHandler)completion{
     odinShareDetailDic[@"sharingPlatfrom"]=[NSString stringWithFormat:@"%lu",(unsigned long)platformType];
     odinShareDetailDic[@"shareStatus"]=[NSNumber numberWithInteger:3];
     odinShareDetailDic[@"sysPlatfrom"]=@"2";//1 安卓 2 ios
-  
+    
     
     NSMutableDictionary *param=[NSMutableDictionary dictionary];
     param[@"odinShareDetail"]=odinShareDetailDic;
-
+    
     [OdinShareHttp post:Odin_cancelAuthStaticsUrl parameters:@{@"param":param} success:^(id  _Nullable responseObject) {
         
     } failure:^(NSError * _Nonnull error) {
         
     }];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (completion) {
+            completion(nil,nil);
+        }
+    });
 }
 
 - (BOOL)isAuth:(OdinSocialPlatformType)type{

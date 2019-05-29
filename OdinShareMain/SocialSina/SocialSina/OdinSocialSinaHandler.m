@@ -189,16 +189,17 @@
 }
 
 - (void)shareMessage{
-    WBAuthorizeRequest *authrRequest=[WBAuthorizeRequest request];
-    authrRequest.scope=@"all";
-    authrRequest.redirectURI=self.redirectURL;
-    WBSendMessageToWeiboRequest *request=[WBSendMessageToWeiboRequest requestWithMessage:self.messageObject authInfo:authrRequest access_token:nil];
-    if (![WeiboSDK sendRequest:request]) {
-        if (self.shareCompletionBlock) {
-            NSError *error=[NSError errorWithDomain:@"发送失败" code:OdinSocialPlatformErrorType_ShareFailed userInfo:@{@"info":@"发送失败"}];
-            self.shareCompletionBlock(nil, error);
-        }
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        WBAuthorizeRequest *authrRequest=[WBAuthorizeRequest request];
+        authrRequest.scope=@"all";
+        authrRequest.redirectURI=self.redirectURL;
+        WBSendMessageToWeiboRequest *request=[WBSendMessageToWeiboRequest requestWithMessage:self.messageObject authInfo:authrRequest access_token:nil];
+        if (![WeiboSDK sendRequest:request]) {
+            if (self.shareCompletionBlock) {
+                NSError *error=[NSError errorWithDomain:@"发送失败" code:OdinSocialPlatformErrorType_ShareFailed userInfo:@{@"info":@"发送失败"}];
+                self.shareCompletionBlock(nil, error);
+            }
+        } });
 }
 
 #pragma mark -- WeiboSDKDelegate
