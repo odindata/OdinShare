@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)post:(NSString *)urlString parameters:(nullable id)parameters success:(nullable void (^)(id _Nullable responseObject))success failure:(nullable void (^)(NSError *error))failure;
 
-+ (void)get:(NSString *)urlString parameters:(nullable id)parameters success:(nullable void (^)(id _Nullable responseObject))success failure:(nullable void (^)(NSError *error))failure;
++ (void)get:(NSString *)urlString parameters:(nullable id)parameters header:(nullable id)header success:(nullable void (^)(id _Nullable responseObject))success failure:(nullable void (^)(NSError *error))failure;
 @end
 
 NS_ASSUME_NONNULL_END

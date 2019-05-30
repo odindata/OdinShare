@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "OdinShare"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "奥丁分享SDK"
 
   # This description is used to generate tags and improve search results.
@@ -87,6 +87,8 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'UI' do |ui|
     ui.vendored_frameworks ='OdinShare/UI/OdinShareSDKUI.framework'
+    ui.resource_bundle = { 'ShareSDKUI' => 'OdinShare/UI/ShareSDKUI.bundle' }
+    
   end
 
   spec.subspec 'Social' do |social|
