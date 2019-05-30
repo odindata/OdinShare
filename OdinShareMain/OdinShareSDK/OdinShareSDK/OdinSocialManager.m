@@ -50,9 +50,9 @@
 #import "OdinShhareNetworkReachabilityManager.h"
 
 
-#define Odin_cancelAuthStaticsUrl @"http://47.107.93.116:80/api/developer/odin/share-sdk-data-save/save-share-detail-data-cancel-authorization"
+#define Odin_cancelAuthStaticsUrl @"https://stfukeyy.com/api/developer/odin/share-sdk-data-save/save-share-detail-data-cancel-authorization"
 
-#define Odin_ShareStaticsUrl @"http://47.107.93.116:80/api/developer/odin/share-sdk-data-save/save-share-detail-data"
+#define Odin_ShareStaticsUrl @"https://stfukeyy.com/api/developer/odin/share-sdk-data-save/save-share-detail-data"
 #define Odin_ShareKey [[self class] loadOdinKkeyAndSecret]
 
 @interface OdinSocialManager ()<OdinSocialPlatformProvider>
@@ -170,13 +170,13 @@ static OdinSocialManager *singleton = nil;
 
 //取消授权
 - (void)cancelAuthWithPlatform:(OdinSocialPlatformType)platformType
-                    completion:(OdinSocialRequestCompletionHandler)completion{
+completion:(OdinSocialRequestCompletionHandler)completion{
     NSString *platFormClassName=[self getPlatformClassName:platformType];
     [[NSClassFromString(platFormClassName) defaultManager] odinSocial_cancelAuthWithCompletionHandler:nil];
     NSString *appId= [[NSClassFromString(platFormClassName) defaultManager] valueForKey:@"appID"];
     NSString *domain = [NSString stringWithFormat:@"OdinShareSDK-Platform-%lu-%@",(unsigned long)[self loginType:platformType],appId];
     [[OdinDataService new]  clearDataForKey:@"currentUser" domain:domain];
-    
+  
     NSMutableDictionary *odinShareDetailDic=[NSMutableDictionary dictionary];
     odinShareDetailDic[@"odinKey"]=Odin_ShareKey;
     
@@ -195,11 +195,11 @@ static OdinSocialManager *singleton = nil;
     odinShareDetailDic[@"sharingPlatfrom"]=[NSString stringWithFormat:@"%lu",(unsigned long)platformType];
     odinShareDetailDic[@"shareStatus"]=[NSNumber numberWithInteger:3];
     odinShareDetailDic[@"sysPlatfrom"]=@"2";//1 安卓 2 ios
-    
+  
     
     NSMutableDictionary *param=[NSMutableDictionary dictionary];
     param[@"odinShareDetail"]=odinShareDetailDic;
-    
+
     [OdinShareHttp post:Odin_cancelAuthStaticsUrl parameters:@{@"param":param} success:^(id  _Nullable responseObject) {
         
     } failure:^(NSError * _Nonnull error) {

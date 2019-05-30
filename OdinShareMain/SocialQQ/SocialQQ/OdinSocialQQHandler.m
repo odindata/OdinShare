@@ -131,7 +131,7 @@ static OdinSocialQQHandler *singleton = nil;
             QQApiAudioObject *audioObj =
             [QQApiAudioObject objectWithURL:[NSURL URLWithString:odinMusicObj.musicUrl]
                                       title:odinMusicObj.title
-                                description:odinMusicObj.description
+                                description:odinMusicObj.descr
                             previewImageURL:[NSURL URLWithString:odinMusicObj.musicLowBandUrl]];
             req = [SendMessageToQQReq reqWithContent:audioObj];
             
@@ -140,7 +140,7 @@ static OdinSocialQQHandler *singleton = nil;
            
             QQApiVideoObject *videoObj = [QQApiVideoObject objectWithURL:[NSURL URLWithString:odinVideoObj.videoUrl]
                                                                    title:odinVideoObj.title
-                                                             description:odinVideoObj.description
+                                                             description:odinVideoObj.descr
                                                         previewImageData:UIImageJPEGRepresentation(thumImg, .9)];
             [videoObj setFlashURL:[NSURL URLWithString:odinVideoObj.videoUrl]];
             req = [SendMessageToQQReq reqWithContent:videoObj];
@@ -170,7 +170,7 @@ static OdinSocialQQHandler *singleton = nil;
            QQApiNewsObject *newsObj = [QQApiNewsObject
                                        objectWithURL:[NSURL URLWithString:odinWebObj.webpageUrl]
                                        title:odinWebObj.title
-                                       description:odinWebObj.description
+                                       description:odinWebObj.descr
                                        previewImageURL:preImgUrl?[NSURL URLWithString:preImgUrl]:nil];
            req = [SendMessageToQQReq reqWithContent:newsObj];
            

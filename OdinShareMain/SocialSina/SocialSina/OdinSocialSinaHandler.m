@@ -157,6 +157,10 @@
         imgMessageObj.delegate=self;
         message.text=object.text;
         message.imageObject=imgMessageObj;
+        if (imgs.count==0) {
+            self.messageObject=message;
+            [self shareMessage];
+        }
         
     }else if ([shareObj isKindOfClass:[OdinShareWebpageObject class]]){
         OdinShareWebpageObject *odinWeObj=(OdinShareWebpageObject *)shareObj;
@@ -263,6 +267,18 @@
 
 #pragma mark -- WBMediaTransferProtocol
 - (void)wbsdk_TransferDidReceiveObject:(id)object{
+    
+    if (self.messageObject.imageObject&&(self.messageObject.imageObject.image==nil||self.messageObject.imageObject.finalAssetArray.count>0)) {
+        //分享多图是检查是否安装新浪
+        if (![WeiboSDK isWeiboAppInstalled]) {
+            if (self.shareCompletionBlock) {
+                NSError *error=[NSError errorWithDomain:@"未安装应用" code:OdinSocialPlatformErrorType_NotInstall userInfo:@{@"info":@"未安装应用"}];
+                self.shareCompletionBlock(nil, error);
+            }
+            return;
+        }
+    }
+    
     [self shareMessage];
 }
 

@@ -126,7 +126,7 @@ static OdinSocialAliPayHandler *singleton = nil;
         OdinShareWebpageObject *odinWebObj=shareObject;
  
         message.title = odinWebObj.title;
-        message.desc = odinWebObj.description;
+        message.desc = odinWebObj.descr;
         if ([odinWebObj.thumbImage isKindOfClass:[NSData class]]) {
             message.thumbData = odinWebObj.thumbImage;
         }else{

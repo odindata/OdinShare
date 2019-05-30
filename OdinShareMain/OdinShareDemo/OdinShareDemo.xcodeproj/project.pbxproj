@@ -32,6 +32,8 @@
 		D83B95E222670E3800B7CD63 /* libSocialTwitter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D83B95E122670E3800B7CD63 /* libSocialTwitter.a */; };
 		D83B95E422670E9600B7CD63 /* TwitterKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D83B95DD22670D4700B7CD63 /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D83B95E522670E9600B7CD63 /* TwitterCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D83B95DE22670D4700B7CD63 /* TwitterCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D83BA99D229E8F7800EC6794 /* dog.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D83BA99C229E8F7800EC6794 /* dog.jpeg */; };
+		D83BA99F229E9B3A00EC6794 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83BA99E229E9B3A00EC6794 /* ImageIO.framework */; };
 		D8457FF2225ADD500068C0A3 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8457FF1225ADD4F0068C0A3 /* TencentOpenAPI.framework */; };
 		D8457FF8225AE5620068C0A3 /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8457FF7225AE5620068C0A3 /* libSocialSina.a */; };
 		D8458001225AE5AE0068C0A3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D8457FFA225AE5AE0068C0A3 /* LICENSE */; };
@@ -169,6 +171,8 @@
 		D83B95DD22670D4700B7CD63 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		D83B95DE22670D4700B7CD63 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		D83B95E122670E3800B7CD63 /* libSocialTwitter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocialTwitter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83BA99C229E8F7800EC6794 /* dog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpeg; sourceTree = "<group>"; };
+		D83BA99E229E9B3A00EC6794 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D8457FF1225ADD4F0068C0A3 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = ../SocialQQ/TencentOpenAPI.framework; sourceTree = "<group>"; };
 		D8457FF7225AE5620068C0A3 /* libSocialSina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocialSina.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8457FFA225AE5AE0068C0A3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -282,6 +286,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D08832224872BE000C4963 /* CoreTelephony.framework in Frameworks */,
+				D83BA99F229E9B3A00EC6794 /* ImageIO.framework in Frameworks */,
 				D89CEB52226EB2C600FC4006 /* libSocialFacebook.a in Frameworks */,
 				D880D64B226DA1E6000C0780 /* OdinShareSDKUI.framework in Frameworks */,
 				D83B95E222670E3800B7CD63 /* libSocialTwitter.a in Frameworks */,
@@ -306,7 +312,6 @@
 				D8457FF2225ADD500068C0A3 /* TencentOpenAPI.framework in Frameworks */,
 				D894C39A22535904004D9C42 /* Photos.framework in Frameworks */,
 				D8994AA52251B5FD00FD5C0C /* libSocialQQ.a in Frameworks */,
-				D8D08832224872BE000C4963 /* CoreTelephony.framework in Frameworks */,
 				D8D08830224872B2000C4963 /* Security.framework in Frameworks */,
 				D845805E225B1E3A0068C0A3 /* libAPOpenSdk.a in Frameworks */,
 				D8D0882E224872A3000C4963 /* libsqlite3.tbd in Frameworks */,
@@ -534,6 +539,7 @@
 			children = (
 				D8C97193225C8C8800EF3269 /* WeiboSDK.bundle */,
 				D838287A22548F710052657B /* apm.mov */,
+				D83BA99C229E8F7800EC6794 /* dog.jpeg */,
 				D847A3A2224B204200A775C5 /* closeButton@2x.png */,
 				D847A3A4224B204200A775C5 /* imageIcon@2x.png */,
 				D847A3A5224B204200A775C5 /* screenshotsIcon@2x.png */,
@@ -612,6 +618,7 @@
 		D88C82AB2245D8CA003125AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D83BA99E229E9B3A00EC6794 /* ImageIO.framework */,
 				D89CEB51226EB2C600FC4006 /* libSocialFacebook.a */,
 				D880D64A226DA1E6000C0780 /* OdinShareSDKUI.framework */,
 				D83B95E122670E3800B7CD63 /* libSocialTwitter.a */,
@@ -743,6 +750,7 @@
 				D847A3C1224B204200A775C5 /* imageIcon@2x.png in Resources */,
 				D847A399224B13AA00A775C5 /* OdinShareViewController.xib in Resources */,
 				D847A3D9224B204200A775C5 /* videoIcon@2x.png in Resources */,
+				D83BA99D229E8F7800EC6794 /* dog.jpeg in Resources */,
 				D847A3BF224B204200A775C5 /* closeButton@2x.png in Resources */,
 				D81CF2F6225EF061004C8B83 /* OdinUserInfoViewController.xib in Resources */,
 				D847A3C4224B204200A775C5 /* D45.jpg in Resources */,
