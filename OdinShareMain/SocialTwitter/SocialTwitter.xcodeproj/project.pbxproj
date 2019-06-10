@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D83B95C32266F74B00B7CD63 /* OdinSocialTwitterHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D83B95C22266F74B00B7CD63 /* OdinSocialTwitterHandler.m */; };
 		D83B95C42266F74B00B7CD63 /* OdinSocialTwitterHandler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D83B95C12266F74B00B7CD63 /* OdinSocialTwitterHandler.h */; };
-		D83B95CC2266F7C500B7CD63 /* OdinShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83B95CB2266F7C500B7CD63 /* OdinShareSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +28,6 @@
 		D83B95BE2266F74B00B7CD63 /* libSocialTwitter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocialTwitter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83B95C12266F74B00B7CD63 /* OdinSocialTwitterHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinSocialTwitterHandler.h; sourceTree = "<group>"; };
 		D83B95C22266F74B00B7CD63 /* OdinSocialTwitterHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinSocialTwitterHandler.m; sourceTree = "<group>"; };
-		D83B95CB2266F7C500B7CD63 /* OdinShareSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OdinShareSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83B95D12267046200B7CD63 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		D83B95D22267046200B7CD63 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,7 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D83B95CC2266F7C500B7CD63 /* OdinShareSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +73,6 @@
 		D83B95CA2266F7C500B7CD63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D83B95CB2266F7C500B7CD63 /* OdinShareSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,7 +201,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/OdinShareSDK/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -258,7 +255,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/OdinShareSDK/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
