@@ -7,13 +7,11 @@
 //
 
 #import "OdinSocialTwitterHandler.h"
-
 #import <TwitterKit/TWTRKit.h>
-
 #define odin_twitterUser @"https://api.twitter.com/1.1/users/show.json"
 
 @interface OdinSocialTwitterHandler ()<TWTRComposerViewControllerDelegate>
-
+@property(nonatomic,assign) BOOL canceledShare;
 @end
 
 @implementation OdinSocialTwitterHandler
@@ -100,7 +98,7 @@ static OdinSocialTwitterHandler *singleton = nil;
     
     //调用方法
     TWTRComposer *composer = [[TWTRComposer alloc] init];
-    
+    self.canceledShare=NO;
     //文字
     if (!shareObject) {
         //设置分享的标题
@@ -184,12 +182,16 @@ static OdinSocialTwitterHandler *singleton = nil;
 
 - (void)shareResult:(TWTRComposerResult )result{
     if (result == TWTRComposerResultCancelled) {
-        NSLog(@"Tweet composition cancelled");
+    
+        if (self.canceledShare) {
+            return;
+        }
         OdinSocialShareResponse *response=[OdinSocialShareResponse shareResponseWithMessage:@"取消分享"];
         NSError *error=[NSError errorWithDomain:@"取消分享" code:OdinSocialPlatformErrorType_Cancel userInfo:@{@"info":@"取消分享"}];
         if (self.shareCompletionBlock) {
             self.shareCompletionBlock(response,error);
         }
+        self.canceledShare=YES;
     }else {
         OdinSocialShareResponse *response=[OdinSocialShareResponse shareResponseWithMessage:@"分享成功"];
         if (self.shareCompletionBlock) {
