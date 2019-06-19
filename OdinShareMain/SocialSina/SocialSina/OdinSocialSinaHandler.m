@@ -277,11 +277,11 @@
                     self.shareCompletionBlock(nil, error);
                 }
                 return;
-            };
+            }else{
+                [self shareMessage];
+            }
         });
     }
-    
-    [self shareMessage];
 }
 
 - (void)wbsdk_TransferDidFailWithErrorCode:(WBSDKMediaTransferErrorCode)errorCode andError:(NSError *)error {
