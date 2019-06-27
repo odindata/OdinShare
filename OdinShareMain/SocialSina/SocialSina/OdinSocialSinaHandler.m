@@ -281,6 +281,8 @@
                 [self shareMessage];
             }
         });
+    }else{
+         [self shareMessage];
     }
 }
 
