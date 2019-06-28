@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  分享接口
  *
  *  @param platformType 平台类型 @see OdinSocialPlatformType
- *  @param messageObject
+ *  @param messageObject 房产深V
  *  @param currentViewController 用于弹出类似邮件分享、短信分享等这样的系统页面
  *  @param completion   回调
  *  @discuss currentViewController 只正对sms,email等平台需要传入viewcontroller的平台，其他不需要的平台可以传入nil
