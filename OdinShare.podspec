@@ -88,7 +88,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'UI' do |ui|
     ui.vendored_frameworks ='OdinShare/UI/OdinShareSDKUI.framework'
     ui.resource_bundle = { 'ShareSDKUI' => 'OdinShare/UI/ShareSDKUI.bundle' }
-    
+    ui.dependency 'OdinShare/Core'
   end
 
   spec.subspec 'Social' do |social|
