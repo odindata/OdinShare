@@ -6,7 +6,23 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D812E18C22C5F31D00DB208C /* OdinShareSDKUIScript */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D812E18F22C5F31D00DB208C /* Build configuration list for PBXAggregateTarget "OdinShareSDKUIScript" */;
+			buildPhases = (
+				D812E19022C5F32000DB208C /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OdinShareSDKUIScript;
+			productName = OdinShareSDKUIScript;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		D8737A4122C9FA69007C459D /* NSBundle+OdinShareSDKUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D8737A3F22C9FA68007C459D /* NSBundle+OdinShareSDKUI.h */; };
+		D8737A4222C9FA69007C459D /* NSBundle+OdinShareSDKUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D8737A4022C9FA68007C459D /* NSBundle+OdinShareSDKUI.m */; };
 		D880D644226DA1C0000C0780 /* OdinShareSDKUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D642226DA1C0000C0780 /* OdinShareSDKUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D880D664226DA374000C0780 /* OdinUICollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D880D651226DA373000C0780 /* OdinUICollectionViewCell.m */; };
 		D880D665226DA374000C0780 /* OdinUIPlatformItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D880D652226DA373000C0780 /* OdinUIPlatformItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,9 +46,12 @@
 		D880D679226DA84B000C0780 /* OdinSocialUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D880D677226DA84B000C0780 /* OdinSocialUIManager.m */; };
 		D891A8942284219300C4BA34 /* OdinUICollectionViewSimpleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D891A8922284219300C4BA34 /* OdinUICollectionViewSimpleCell.h */; };
 		D891A8952284219300C4BA34 /* OdinUICollectionViewSimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D891A8932284219300C4BA34 /* OdinUICollectionViewSimpleCell.m */; };
+		D8B7585022C9D60000A94625 /* OdinShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B7584F22C9D60000A94625 /* OdinShareSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8737A3F22C9FA68007C459D /* NSBundle+OdinShareSDKUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+OdinShareSDKUI.h"; sourceTree = "<group>"; };
+		D8737A4022C9FA68007C459D /* NSBundle+OdinShareSDKUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+OdinShareSDKUI.m"; sourceTree = "<group>"; };
 		D880D63F226DA1C0000C0780 /* OdinShareSDKUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OdinShareSDKUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D880D642226DA1C0000C0780 /* OdinShareSDKUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinShareSDKUI.h; sourceTree = "<group>"; };
 		D880D643226DA1C0000C0780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +77,7 @@
 		D880D677226DA84B000C0780 /* OdinSocialUIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinSocialUIManager.m; sourceTree = "<group>"; };
 		D891A8922284219300C4BA34 /* OdinUICollectionViewSimpleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinUICollectionViewSimpleCell.h; sourceTree = "<group>"; };
 		D891A8932284219300C4BA34 /* OdinUICollectionViewSimpleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinUICollectionViewSimpleCell.m; sourceTree = "<group>"; };
+		D8B7584F22C9D60000A94625 /* OdinShareSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OdinShareSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,17 +85,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B7585022C9D60000A94625 /* OdinShareSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D828644222C0A3CC00CACC61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8B7584F22C9D60000A94625 /* OdinShareSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D880D635226DA1C0000C0780 = {
 			isa = PBXGroup;
 			children = (
 				D880D641226DA1C0000C0780 /* OdinShareSDKUI */,
 				D880D640226DA1C0000C0780 /* Products */,
+				D828644222C0A3CC00CACC61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +120,8 @@
 		D880D641226DA1C0000C0780 /* OdinShareSDKUI */ = {
 			isa = PBXGroup;
 			children = (
+				D8737A3F22C9FA68007C459D /* NSBundle+OdinShareSDKUI.h */,
+				D8737A4022C9FA68007C459D /* NSBundle+OdinShareSDKUI.m */,
 				D880D65B226DA373000C0780 /* OdinUIConst.h */,
 				D880D663226DA374000C0780 /* OdinUIConst.m */,
 				D880D650226DA373000C0780 /* ShareSheet */,
@@ -141,6 +173,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8737A4122C9FA69007C459D /* NSBundle+OdinShareSDKUI.h in Headers */,
 				D880D678226DA84B000C0780 /* OdinSocialUIManager.h in Headers */,
 				D880D669226DA374000C0780 /* OdinUIShareSheetViewController.h in Headers */,
 				D880D665226DA374000C0780 /* OdinUIPlatformItem.h in Headers */,
@@ -187,6 +220,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Odin;
 				TargetAttributes = {
+					D812E18C22C5F31D00DB208C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					D880D63E226DA1C0000C0780 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -205,6 +241,7 @@
 			projectRoot = "";
 			targets = (
 				D880D63E226DA1C0000C0780 /* OdinShareSDKUI */,
+				D812E18C22C5F31D00DB208C /* OdinShareSDKUIScript */,
 			);
 		};
 /* End PBXProject section */
@@ -219,6 +256,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D812E19022C5F32000DB208C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"current directory is\"\nexpr `pwd`\n\nFMK_NAME=${PROJECT_NAME}\n\nsim_frame_path=${SRCROOT}/frameworkSimulator/${FMK_NAME}.framework\ndev_frame_path=${SRCROOT}/frameworkDevice/${FMK_NAME}.framework\nmix_frame_path=${SRCROOT}/frameworkMix/${FMK_NAME}.framework\n\ndirectorymake() {\nif [[ -d $1 ]]; then\necho \"remove old directory $1\"\nrm -rf $1\nfi\necho \"make new directory $1\"\nmkdir -p $1\n}\n\ndirectorymake ${sim_frame_path}\ndirectorymake ${dev_frame_path}\ndirectorymake ${mix_frame_path}\n\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\necho ${DEVICE_DIR}\necho ${SIMULATOR_DIR}\nxcodebuild clean\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos build\ncp -R \"${DEVICE_DIR}/\" \"${dev_frame_path}/\"\ncp -R \"${DEVICE_DIR}/\" \"${mix_frame_path}/\"\n\nxcodebuild clean\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator build\ncp -R \"${SIMULATOR_DIR}/\" \"${sim_frame_path}/\"\n\necho \"Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\"\n\nlipo -create \"${sim_frame_path}/${FMK_NAME}\" \"${dev_frame_path}/${FMK_NAME}\" -output \"${mix_frame_path}/${FMK_NAME}\"\nrm -rf \"${WRK_DIR}\"\nopen \"${mix_frame_path}\"\n\n# FMK_NAME=${PROJECT_NAME}\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D880D63B226DA1C0000C0780 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -231,6 +288,7 @@
 				D880D664226DA374000C0780 /* OdinUICollectionViewCell.m in Sources */,
 				D891A8952284219300C4BA34 /* OdinUICollectionViewSimpleCell.m in Sources */,
 				D880D672226DA374000C0780 /* OdinImage.m in Sources */,
+				D8737A4222C9FA69007C459D /* NSBundle+OdinShareSDKUI.m in Sources */,
 				D880D679226DA84B000C0780 /* OdinSocialUIManager.m in Sources */,
 				D880D66F226DA374000C0780 /* OdinColor.m in Sources */,
 				D880D666226DA374000C0780 /* OdinUIShareSheetViewController.m in Sources */,
@@ -241,6 +299,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D812E18D22C5F31D00DB208C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D812E18E22C5F31D00DB208C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D880D645226DA1C0000C0780 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -369,6 +445,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OdinShareSDKUI",
+				);
 				INFOPLIST_FILE = OdinShareSDKUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -394,6 +474,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OdinShareSDKUI",
+				);
 				INFOPLIST_FILE = OdinShareSDKUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -412,6 +496,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D812E18F22C5F31D00DB208C /* Build configuration list for PBXAggregateTarget "OdinShareSDKUIScript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D812E18D22C5F31D00DB208C /* Debug */,
+				D812E18E22C5F31D00DB208C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D880D639226DA1C0000C0780 /* Build configuration list for PBXProject "OdinShareSDKUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
