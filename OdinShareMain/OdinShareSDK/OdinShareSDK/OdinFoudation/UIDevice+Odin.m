@@ -19,18 +19,19 @@
     CTTelephonyNetworkInfo *info = [[CTTelephonyNetworkInfo alloc] init];
     CTCarrier *carrier = [info subscriberCellularProvider];
     if (carrier == nil) {
-        return 0;
+        return 3;
     }
     if (!carrier.isoCountryCode) {
         //        AoD_Debug(@"没有SIM卡");
-        return 0;;
+        return 3;
     }else{
         NSString *carrierCode=[NSString stringWithFormat:@"%@%@",carrier.mobileCountryCode,carrier.mobileNetworkCode];
         if ([carrierCode isEqualToString:@"46005"]||[carrierCode isEqualToString:@"46003"]) {
             //电信 0
+            return 0;
         }else if([carrierCode isEqualToString:@"46001"]||[carrierCode isEqualToString:@"46006"]){
             //联通 1
-            return 3;
+            return 1;
         }else if([carrierCode isEqualToString:@"46000"]||[carrierCode isEqualToString:@"46002"]||[carrierCode isEqualToString:@"46007"]){
             //移动 2
             return 2;
@@ -39,7 +40,7 @@
             return 3;
         }
     }
-    return 0; return 0;
+    return 3;
 }
     
 + (CGSize)odin_deviceSize{
