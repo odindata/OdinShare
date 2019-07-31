@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D830A87D22F149F40073C252 /* OdinShareSDKScript */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D830A88022F149F40073C252 /* Build configuration list for PBXAggregateTarget "OdinShareSDKScript" */;
+			buildPhases = (
+				D830A88122F149FC0073C252 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OdinShareSDKScript;
+			productName = OdinShareSDKScript;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		D844C5D82288FFA700BAD69D /* OdinShhareNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D844C5D62288FFA700BAD69D /* OdinShhareNetworkReachabilityManager.m */; };
 		D844C5D92288FFA700BAD69D /* OdinShhareNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D844C5D72288FFA700BAD69D /* OdinShhareNetworkReachabilityManager.h */; };
@@ -260,9 +274,13 @@
 		D8CAD87E2248AAC0007B0EC4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Odin;
 				TargetAttributes = {
+					D830A87D22F149F40073C252 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					D8CAD8862248AAC0007B0EC4 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -281,6 +299,7 @@
 			projectRoot = "";
 			targets = (
 				D8CAD8862248AAC0007B0EC4 /* OdinShareSDK */,
+				D830A87D22F149F40073C252 /* OdinShareSDKScript */,
 			);
 		};
 /* End PBXProject section */
@@ -318,6 +337,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D830A88122F149FC0073C252 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"current directory is\"\nexpr `pwd`\n\nFMK_NAME=${PROJECT_NAME}\n\nsim_frame_path=${SRCROOT}/frameworkSimulator/${FMK_NAME}.framework\ndev_frame_path=${SRCROOT}/frameworkDevice/${FMK_NAME}.framework\nmix_frame_path=${SRCROOT}/frameworkMix/${FMK_NAME}.framework\n\ndirectorymake() {\nif [[ -d $1 ]]; then\necho \"remove old directory $1\"\nrm -rf $1\nfi\necho \"make new directory $1\"\nmkdir -p $1\n}\n\ndirectorymake ${sim_frame_path}\ndirectorymake ${dev_frame_path}\ndirectorymake ${mix_frame_path}\n\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\necho ${DEVICE_DIR}\necho ${SIMULATOR_DIR}\nxcodebuild clean\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos build\ncp -R \"${DEVICE_DIR}/\" \"${dev_frame_path}/\"\ncp -R \"${DEVICE_DIR}/\" \"${mix_frame_path}/\"\n\nxcodebuild clean\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator build\ncp -R \"${SIMULATOR_DIR}/\" \"${sim_frame_path}/\"\n\necho \"Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\"\n\nlipo -create \"${sim_frame_path}/${FMK_NAME}\" \"${dev_frame_path}/${FMK_NAME}\" -output \"${mix_frame_path}/${FMK_NAME}\"\nrm -rf \"${WRK_DIR}\"\nopen \"${mix_frame_path}\"\n\n# FMK_NAME=${PROJECT_NAME}\n\n\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -343,6 +379,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D830A87E22F149F40073C252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D830A87F22F149F40073C252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D8CAD88D2248AAC0007B0EC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -547,6 +601,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D830A88022F149F40073C252 /* Build configuration list for PBXAggregateTarget "OdinShareSDKScript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D830A87E22F149F40073C252 /* Debug */,
+				D830A87F22F149F40073C252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D8CAD8812248AAC0007B0EC4 /* Build configuration list for PBXProject "OdinShareSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
