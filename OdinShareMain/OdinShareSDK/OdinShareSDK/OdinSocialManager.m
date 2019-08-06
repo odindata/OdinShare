@@ -46,6 +46,10 @@
 #import <SocialFacebook/OdinSoicalFacebookHandler.h>
 #endif
 
+#if __has_include(<SocialDingTalk/OdinSocialDingTalkHandler.h>)
+#import <SocialDingTalk/OdinSocialDingTalkHandler.h>
+#endif
+
 #import "OdinShareHttp.h"
 #import "OdinShhareNetworkReachabilityManager.h"
 
@@ -287,6 +291,9 @@ completion:(OdinSocialRequestCompletionHandler)completion{
             break;
         case OdinSocialPlatformTypeTwitter:
             platformTypeStr= @"OdinSocialTwitterHandler";
+            break;
+        case OdinSocialPlatformTypeDingTalk:
+            platformTypeStr= @"OdinSocialDingTalkHandler";
             break;
         default:
             break;

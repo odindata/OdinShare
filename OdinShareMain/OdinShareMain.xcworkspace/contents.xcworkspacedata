@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SocialDingTalk/SocialDingTalk.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:OdinShareSDKUI/OdinShareSDKUI.xcodeproj">
    </FileRef>
    <FileRef

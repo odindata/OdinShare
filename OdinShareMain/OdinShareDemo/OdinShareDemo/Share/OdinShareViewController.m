@@ -72,7 +72,7 @@ static UIWindow *myWindow = nil;
                         @(SSDKPlatformTypeSinaWeibo),
                         @(SSDKPlatformTypeAliSocial),
                         @(SSDKPlatformTypeAliSocialTimeline),
-//                        @(OdinDKPlatformTypeDingTalk),
+                        @(SSDKPlatformTypeDingTalk),
 //                        @(OdinDKPlatformTypeTencentWeibo),
 //                        @(OdinDKPlatformTypeDouBan),
 //                        @(OdinDKPlatformTypeMeiPai),

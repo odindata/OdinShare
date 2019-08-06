@@ -55,6 +55,8 @@
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
     
+    [[OdinSocialManager defaultManager] setPlaform:OdinSocialPlatformTypeDingTalk appKey:@"dingoabcwtuab76wy0kyzo" appSecret:nil redirectURL:nil];
+    
     return YES;
 }
 

@@ -81,6 +81,9 @@
 		D847A3DB224B204200A775C5 /* audioURLIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D847A3BE224B204200A775C5 /* audioURLIcon@2x.png */; };
 		D8499D552276A89B00053B01 /* ShareCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8499D542276A89B00053B01 /* ShareCategoryCollectionViewCell.m */; };
 		D8499D582276AA6D00053B01 /* ShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8499D572276AA6D00053B01 /* ShareModel.m */; };
+		D858314F22F9167A002FB43D /* OdinDingTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D858314E22F9167A002FB43D /* OdinDingTalkViewController.m */; };
+		D858315122F92361002FB43D /* libSocialDingTalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D858315022F92361002FB43D /* libSocialDingTalk.a */; };
+		D858315422F92C61002FB43D /* DTShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D858315322F92C60002FB43D /* DTShareKit.framework */; };
 		D880D64B226DA1E6000C0780 /* OdinShareSDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D880D64A226DA1E6000C0780 /* OdinShareSDKUI.framework */; };
 		D88C82822245D855003125AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C82812245D855003125AC /* AppDelegate.m */; };
 		D88C82852245D855003125AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C82842245D855003125AC /* ViewController.m */; };
@@ -234,6 +237,10 @@
 		D8499D542276A89B00053B01 /* ShareCategoryCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareCategoryCollectionViewCell.m; sourceTree = "<group>"; };
 		D8499D562276AA6D00053B01 /* ShareModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareModel.h; sourceTree = "<group>"; };
 		D8499D572276AA6D00053B01 /* ShareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareModel.m; sourceTree = "<group>"; };
+		D858314D22F9167A002FB43D /* OdinDingTalkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdinDingTalkViewController.h; sourceTree = "<group>"; };
+		D858314E22F9167A002FB43D /* OdinDingTalkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OdinDingTalkViewController.m; sourceTree = "<group>"; };
+		D858315022F92361002FB43D /* libSocialDingTalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocialDingTalk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D858315322F92C60002FB43D /* DTShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DTShareKit.framework; sourceTree = "<group>"; };
 		D880D64A226DA1E6000C0780 /* OdinShareSDKUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OdinShareSDKUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88C827D2245D855003125AC /* OdinShareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdinShareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88C82802245D855003125AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -286,6 +293,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D858315122F92361002FB43D /* libSocialDingTalk.a in Frameworks */,
 				D8D08832224872BE000C4963 /* CoreTelephony.framework in Frameworks */,
 				D83BA99F229E9B3A00EC6794 /* ImageIO.framework in Frameworks */,
 				D89CEB52226EB2C600FC4006 /* libSocialFacebook.a in Frameworks */,
@@ -326,6 +334,7 @@
 				D845805D225B1E390068C0A3 /* libAPOpenSdk.a in Frameworks */,
 				D8D088282248721E000C4963 /* libc++.tbd in Frameworks */,
 				4D313514EB8B35E8E995709E /* libPods-OdinShareDemo.a in Frameworks */,
+				D858315422F92C61002FB43D /* DTShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +539,8 @@
 				D83B959122657B2000B7CD63 /* OdinTwitterViewController.m */,
 				D83B959322657BB800B7CD63 /* OdinInstagramViewController.h */,
 				D83B959422657BB800B7CD63 /* OdinInstagramViewController.m */,
+				D858314D22F9167A002FB43D /* OdinDingTalkViewController.h */,
+				D858314E22F9167A002FB43D /* OdinDingTalkViewController.m */,
 			);
 			path = SharePlatformViewControllers;
 			sourceTree = "<group>";
@@ -567,6 +578,14 @@
 				D847A3BE224B204200A775C5 /* audioURLIcon@2x.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D858315222F92C60002FB43D /* DingTalk */ = {
+			isa = PBXGroup;
+			children = (
+				D858315322F92C60002FB43D /* DTShareKit.framework */,
+			);
+			path = DingTalk;
 			sourceTree = "<group>";
 		};
 		D88C82742245D855003125AC = {
@@ -618,6 +637,7 @@
 		D88C82AB2245D8CA003125AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D858315022F92361002FB43D /* libSocialDingTalk.a */,
 				D83BA99E229E9B3A00EC6794 /* ImageIO.framework */,
 				D89CEB51226EB2C600FC4006 /* libSocialFacebook.a */,
 				D880D64A226DA1E6000C0780 /* OdinShareSDKUI.framework */,
@@ -652,6 +672,7 @@
 		D8994AA62251B71400FD5C0C /* SocialLib */ = {
 			isa = PBXGroup;
 			children = (
+				D858315222F92C60002FB43D /* DingTalk */,
 				D83B95DC22670D4700B7CD63 /* Twitter */,
 				D83B958522656F4100B7CD63 /* FacebookShare */,
 				D8458047225B1E370068C0A3 /* APOpenSdk */,
@@ -848,6 +869,7 @@
 				D81CF2E8225EECD9004C8B83 /* OdinAuthViewController.m in Sources */,
 				D81CF2F0225EEF9B004C8B83 /* UIImage+KaImage.m in Sources */,
 				D8BEDC3E226D613300A14EDD /* OdinFImage.m in Sources */,
+				D858314F22F9167A002FB43D /* OdinDingTalkViewController.m in Sources */,
 				D81CF2ED225EEED8004C8B83 /* OdinFColor.m in Sources */,
 				D8499D552276A89B00053B01 /* ShareCategoryCollectionViewCell.m in Sources */,
 				D88C82902245D856003125AC /* main.m in Sources */,
@@ -1020,6 +1042,7 @@
 					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/AliLogin",
 					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/FacebookShare",
 					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/Twitter",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/DingTalk",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OdinShareDemo/OdinShareDemo.h";
 				INFOPLIST_FILE = OdinShareDemo/Info.plist;
@@ -1067,6 +1090,7 @@
 					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/AliLogin",
 					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/FacebookShare",
 					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/Twitter",
+					"$(PROJECT_DIR)/OdinShareDemo/SocialLib/DingTalk",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OdinShareDemo/OdinShareDemo.h";
 				INFOPLIST_FILE = OdinShareDemo/Info.plist;

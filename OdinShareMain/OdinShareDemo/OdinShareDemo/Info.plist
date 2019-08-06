@@ -88,6 +88,16 @@
 				<string>twitterkit-viOnkeLpHBKs6KXV7MPpeGyzE</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>dingding</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>dingoabcwtuab76wy0kyzo</string>
+			</array>
+		</dict>
 		<dict/>
 	</array>
 	<key>CFBundleVersion</key>
