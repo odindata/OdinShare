@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
 
   spec.frameworks = 'CoreGraphics'
   spec.libraries = 'sqlite3'
-  
+  spec.dependency "OdinDomainSecurity", "~> 0.1.0"
   spec.subspec 'Core' do |c|
     c.vendored_frameworks ='OdinShare/Core/*.framework'
   end
