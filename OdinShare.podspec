@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "OdinShare"
-  spec.version      = "1.1.0"
+  spec.version      = "1.1.1"
   spec.summary      = "奥丁分享SDK"
 
   # This description is used to generate tags and improve search results.
@@ -122,6 +122,12 @@ Pod::Spec.new do |spec|
       ap.vendored_libraries ='OdinShare/Social/SocialAliPay/*.a'
       ap.vendored_libraries ='OdinShare/Social/SocialAliPay/**/*.a'
       ap.dependency 'OdinShare/Core'
+    end
+    social.subspec 'SocialDingTalk' do |dt|
+      dt.source_files = 'OdinShare/Social/SocialDingTalk/**/*.h'
+      dt.vendored_libraries ='OdinShare/Social/SocialDingTalk/*.a'
+      dt.vendored_frameworks ='OdinShare/Social/SocialDingTalk/**/*.framework'
+      dt.dependency 'OdinShare/Core'
     end
     social.subspec 'SocialFacebook' do |fb|
       fb.source_files = 'OdinShare/Social/SocialFacebook/*.h'
